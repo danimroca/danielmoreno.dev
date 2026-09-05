@@ -71,19 +71,22 @@
               <span class="win-btn win-btn--close" aria-hidden="true">×</span>
             </div>
             <pre class="terminal__body"><code>$ whoami
-daniel.moreno_roca
+daniel_moreno_roca
 
 $ cat role.txt
-Senior SDET · Test Infrastructure · DevSecOps
+Senior SDET — Test Infrastructure — DevSecOps
 
 $ ./check --suite iam --pipeline cicd
 ✔ OAuth 2.0 / SAML / OIDC / Kerberos — verified
+✔ mock SAML/OIDC providers — no drift
 ✔ CI/CD release gates — green
-✔ Nightly security scans — fast detection, no dev blockers
-✔ SLA under production load — pass
+✔ Nightly scans — fast detection, no dev blockers
+✔ 1% flake rate, 0 quarantines on release-blocking suites
 
 $ git log --oneline -1
-a1b2c3d  shift security left, ship with confidence</code></pre>
+a1b2c3d  fix(iam): resolve OIDC token refresh race
+
+$ <span class="cursor">█</span></code></pre>
           </div>
         </div>
       </div>
@@ -326,13 +329,13 @@ a1b2c3d  shift security left, ship with confidence</code></pre>
           <div class="edu-card reveal">
             <h3>Engineering Degree</h3>
             <p class="edu-card__school">Universitat Autònoma de Barcelona</p>
-            <p class="edu-card__field">Information &amp; Communication Technologies</p>
+            <p class="edu-card__field">Computer Science</p>
             <span class="edu-card__period">2006 — 2009</span>
           </div>
           <div class="edu-card reveal">
             <h3>Associate's Degree</h3>
             <p class="edu-card__school">IES Nicolau Copèrnic</p>
-            <p class="edu-card__field">Information &amp; Communication Technologies</p>
+            <p class="edu-card__field">Multiplatform Application Development</p>
             <span class="edu-card__period">2013 — 2015</span>
           </div>
         </div>

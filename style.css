@@ -122,6 +122,8 @@ body {
 .win-btn--close:hover { background: #e06c75; color: #fff; }
 .terminal__body { padding: 20px; font-family: "JetBrains Mono", monospace; font-size: 0.8rem; line-height: 1.75; overflow-x: auto; }
 .terminal__body code { color: #b9cbe4; white-space: pre; }
+.cursor { display: inline-block; width: 0.6em; background: var(--accent); animation: blink-cursor 1.1s step-end infinite; }
+@keyframes blink-cursor { 0%, 50% { opacity: 1; } 50.01%, 100% { opacity: 0; } }
 
 /* ---------- SECTIONS ---------- */
 .section { padding: 96px 0; }
