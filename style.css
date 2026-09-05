@@ -292,7 +292,7 @@ body {
     background: var(--bg-alt); border-bottom: 1px solid var(--border);
     max-height: 0; overflow: hidden; transition: max-height 0.35s ease;
   }
-  .nav__links.open { max-height: 320px; }
+  .nav__links.open { max-height: 420px; }
   .nav__links a { width: 100%; padding: 16px 24px; border-top: 1px solid var(--border); }
   .nav__toggle { display: flex; }
   .section { padding: 72px 0; }
