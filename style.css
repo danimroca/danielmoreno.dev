@@ -262,7 +262,8 @@ body {
 }
 .contact__inner { text-align: center; max-width: 640px; margin: 0 auto; }
 .contact__text { color: var(--text-dim); font-size: 1.05rem; margin-bottom: 32px; }
-.contact__links { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+.contact__links { display: flex; gap: 12px; justify-content: center; flex-wrap: nowrap; }
+.contact__links .btn { padding: 12px 18px; font-size: 0.9rem; white-space: nowrap; }
 
 /* ---------- FOOTER ---------- */
 .footer { border-top: 1px solid var(--border); padding: 28px 0; background: var(--bg); }
