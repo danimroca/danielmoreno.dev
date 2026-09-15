@@ -1,0 +1,25 @@
+{
+  "name": "danielmoreno-dev",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:e2e": "playwright test",
+    "test:e2e:update": "playwright test --update-snapshots",
+    "test:dast": "playwright test -g \"DAST\"",
+    "sast": "semgrep scan --config p/owasp-top-ten --config .semgrep/rules.yaml main.js index.html report.js suite.js report.html suite.html --error",
+    "report:unit": "vitest run --reporter=json --outputFile=reports/latest/vitest.json",
+    "report:e2e": "node scripts/run-e2e-reports.mjs",
+    "report:sast": "semgrep scan --config p/owasp-top-ten --config .semgrep/rules.yaml main.js index.html report.js suite.js report.html suite.html --json -o reports/latest/semgrep.json",
+    "report:all": "npm run report:unit && npm run report:e2e; npm run report:sast; node scripts/build-report.mjs",
+    "serve": "node tests/server.mjs"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.10.0",
+    "@playwright/test": "^1.48.0",
+    "jsdom": "^25.0.0",
+    "vitest": "^2.1.0"
+  }
+}
