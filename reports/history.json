@@ -1,6 +1,1244 @@
 {
   "runs": [
     {
+      "date": "2026-09-15T22:29:05.539Z",
+      "commit": "6e7d5af",
+      "branch": "master",
+      "suites": {
+        "unit": {
+          "total": 11,
+          "passed": 11,
+          "failed": 0,
+          "skipped": 0,
+          "durationMs": 54.203857421875,
+          "status": "pass",
+          "tests": [
+            {
+              "name": "initNav adds .scrolled when scrollY > 10",
+              "file": "/home/runner/work/danielmoreno.dev/danielmoreno.dev/tests/unit/main.test.js",
+              "status": "passed",
+              "durationMs": 16.63327800000002,
+              "message": ""
+            },
+            {
+              "name": "initNav removes .scrolled when back at top",
+              "file": "/home/runner/work/danielmoreno.dev/danielmoreno.dev/tests/unit/main.test.js",
+              "status": "passed",
+              "durationMs": 6.915768000000071,
+              "message": ""
+            },
+            {
+              "name": "initNav does not add .scrolled at exactly 10px (threshold is > 10)",
+              "file": "/home/runner/work/danielmoreno.dev/danielmoreno.dev/tests/unit/main.test.js",
+              "status": "passed",
+              "durationMs": 5.469592000000034,
+              "message": ""
+            },
+            {
+              "name": "initNav toggles .open on the links when the hamburger is clicked",
+              "file": "/home/runner/work/danielmoreno.dev/danielmoreno.dev/tests/unit/main.test.js",
+              "status": "passed",
+              "durationMs": 6.1716610000000856,
+              "message": ""
+            },
+            {
+              "name": "initNav closes the menu when a nav link is clicked",
+              "file": "/home/runner/work/danielmoreno.dev/danielmoreno.dev/tests/unit/main.test.js",
+              "status": "passed",
+              "durationMs": 6.313836999999921,
+              "message": ""
+            },
+            {
+              "name": "initReveal observes every .reveal element with the 0.12 threshold",
+              "file": "/home/runner/work/danielmoreno.dev/danielmoreno.dev/tests/unit/main.test.js",
+              "status": "passed",
+              "durationMs": 4.065104000000019,
+              "message": ""
+            },
+            {
+              "name": "initReveal assigns staggered transitionDelay of (i % 4) * 70ms",
+              "file": "/home/runner/work/danielmoreno.dev/danielmoreno.dev/tests/unit/main.test.js",
+              "status": "passed",
+              "durationMs": 2.2230650000000196,
+              "message": ""
+            },
+            {
+              "name": "initReveal adds .visible when the element intersects and stops observing it",
+              "file": "/home/runner/work/danielmoreno.dev/danielmoreno.dev/tests/unit/main.test.js",
+              "status": "passed",
+              "durationMs": 2.133336999999983,
+              "message": ""
+            },
+            {
+              "name": "initReveal ignores non-intersecting entries",
+              "file": "/home/runner/work/danielmoreno.dev/danielmoreno.dev/tests/unit/main.test.js",
+              "status": "passed",
+              "durationMs": 1.6928190000000995,
+              "message": ""
+            },
+            {
+              "name": "setYear writes the current year into #year",
+              "file": "/home/runner/work/danielmoreno.dev/danielmoreno.dev/tests/unit/main.test.js",
+              "status": "passed",
+              "durationMs": 1.0021320000000742,
+              "message": ""
+            },
+            {
+              "name": "setYear is a no-op when #year is missing",
+              "file": "/home/runner/work/danielmoreno.dev/danielmoreno.dev/tests/unit/main.test.js",
+              "status": "passed",
+              "durationMs": 1.2038609999999608,
+              "message": ""
+            }
+          ],
+          "detail": []
+        },
+        "e2e": {
+          "total": 104,
+          "passed": 104,
+          "failed": 0,
+          "flaky": 0,
+          "skipped": 0,
+          "durationMs": 140815,
+          "status": "pass",
+          "projects": {
+            "chromium": {
+              "total": 54,
+              "passed": 54,
+              "failed": 0
+            },
+            "firefox": {
+              "total": 50,
+              "passed": 50,
+              "failed": 0
+            }
+          },
+          "tests": [
+            {
+              "name": "no WCAG 2.1 AA violations at desktop size",
+              "file": "accessibility.spec.js",
+              "project": "chromium",
+              "status": "passed",
+              "durationMs": 1946,
+              "message": ""
+            },
+            {
+              "name": "no WCAG 2.1 AA violations at mobile size",
+              "file": "accessibility.spec.js",
+              "project": "chromium",
+              "status": "passed",
+              "durationMs": 1601,
+              "message": ""
+            },
+            {
+              "name": "keyboard-only navigation reaches all nav links and CTAs",
+              "file": "accessibility.spec.js",
+              "project": "chromium",
+              "status": "passed",
+              "durationMs": 1066,
+              "message": ""
+            },
+            {
+              "name": "focus is visible on interactive elements",
+              "file": "accessibility.spec.js",
+              "project": "chromium",
+              "status": "passed",
+              "durationMs": 1048,
+              "message": ""
+            },
+            {
+              "name": "mobile menu is operable by keyboard",
+              "file": "accessibility.spec.js",
+              "project": "chromium",
+              "status": "passed",
+              "durationMs": 1081,
+              "message": ""
+            },
+            {
+              "name": "title and meta description are present",
+              "file": "content.spec.js",
+              "project": "chromium",
+              "status": "passed",
+              "durationMs": 413,
+              "message": ""
+            },
+            {
+              "name": "Open Graph and Twitter card tags are present",
+              "file": "content.spec.js",
+              "project": "chromium",
+              "status": "passed",
+              "durationMs": 259,
+              "message": ""
+            },
+            {
+              "name": "all major sections render",
+              "file": "content.spec.js",
+              "project": "chromium",
+              "status": "passed",
+              "durationMs": 257,
+              "message": ""
+            },
+            {
+              "name": "expected counts: jobs, case studies, skill cards, projects, education",
+              "file": "content.spec.js",
+              "project": "chromium",
+              "status": "passed",
+              "durationMs": 247,
+              "message": ""
+            },
+            {
+              "name": "footer year matches the current year",
+              "file": "content.spec.js",
+              "project": "chromium",
+              "status": "passed",
+              "durationMs": 230,
+              "message": ""
+            },
+            {
+              "name": "no console errors on load",
+              "file": "content.spec.js",
+              "project": "chromium",
+              "status": "passed",
+              "durationMs": 766,
+              "message": ""
+            },
+            {
+              "name": "all local assets load without 404s",
+              "file": "content.spec.js",
+              "project": "chromium",
+              "status": "passed",
+              "durationMs": 252,
+              "message": ""
+            },
+            {
+              "name": "_headers declares a strict CSP",
+              "file": "dast.spec.js",
+              "project": "chromium",
+              "status": "passed",
+              "durationMs": 5,
+              "message": ""
+            },
+            {
+              "name": "_headers declares clickjacking + nosniff + referrer protection",
+              "file": "dast.spec.js",
+              "project": "chromium",
+              "status": "passed",
+              "durationMs": 1,
+              "message": ""
+            },
+            {
+              "name": "served headers match _headers (local server mirrors prod)",
+              "file": "dast.spec.js",
+              "project": "chromium",
+              "status": "passed",
+              "durationMs": 20,
+              "message": ""
+            },
+            {
+              "name": "X-Content-Type-Options: nosniff",
+              "file": "dast.spec.js",
+              "project": "chromium",
+              "status": "passed",
+              "durationMs": 1,
+              "message": ""
+            },
+            {
+              "name": "clickjacking protection (XFO or CSP frame-ancestors)",
+              "file": "dast.spec.js",
+              "project": "chromium",
+              "status": "passed",
+              "durationMs": 0,
+              "message": ""
+            },
+            {
+              "name": "Referrer-Policy and Permissions-Policy set",
+              "file": "dast.spec.js",
+              "project": "chromium",
+              "status": "passed",
+              "durationMs": 1,
+              "message": ""
+            },
+            {
+              "name": "JSON responses are not sniffsable as scripts (content-type + nosniff)",
+              "file": "dast.spec.js",
+              "project": "chromium",
+              "status": "passed",
+              "durationMs": 5,
+              "message": ""
+            },
+            {
+              "name": "CSP forbids unsafe-inline/unsafe-eval in script-src",
+              "file": "dast.spec.js",
+              "project": "chromium",
+              "status": "passed",
+              "durationMs": 1,
+              "message": ""
+            },
+            {
+              "name": "CSP has no wildcard sources",
+              "file": "dast.spec.js",
+              "project": "chromium",
+              "status": "passed",
+              "durationMs": 3,
+              "message": ""
+            },
+            {
+              "name": "HSTS present in production",
+              "file": "dast.spec.js",
+              "project": "chromium",
+              "status": "passed",
+              "durationMs": 0,
+              "message": ""
+            },
+            {
+              "name": "CSP is enforced at runtime (injected script + inline handler are blocked)",
+              "file": "dast.spec.js",
+              "project": "chromium",
+              "status": "passed",
+              "durationMs": 209,
+              "message": ""
+            },
+            {
+              "name": "page refuses to render inside a cross-origin iframe",
+              "file": "dast.spec.js",
+              "project": "chromium",
+              "status": "passed",
+              "durationMs": 2068,
+              "message": ""
+            },
+            {
+              "name": "no script execution from URL hash (all pages)",
+              "file": "dast.spec.js",
+              "project": "chromium",
+              "status": "passed",
+              "durationMs": 1701,
+              "message": ""
+            },
+            {
+              "name": "no script execution from query string (all pages)",
+              "file": "dast.spec.js",
+              "project": "chromium",
+              "status": "passed",
+              "durationMs": 1716,
+              "message": ""
+            },
+            {
+              "name": "Quality Lab JSON data cannot inject DOM (XSS via report payload)",
+              "file": "dast.spec.js",
+              "project": "chromium",
+              "status": "passed",
+              "durationMs": 735,
+              "message": ""
+            },
+            {
+              "name": "no eval() or Function() constructor in shipped JS",
+              "file": "dast.spec.js",
+              "project": "chromium",
+              "status": "passed",
+              "durationMs": 9,
+              "message": ""
+            },
+            {
+              "name": "no document.write in shipped JS",
+              "file": "dast.spec.js",
+              "project": "chromium",
+              "status": "passed",
+              "durationMs": 6,
+              "message": ""
+            },
+            {
+              "name": "no inline event handlers (onclick= etc.)",
+              "file": "dast.spec.js",
+              "project": "chromium",
+              "status": "passed",
+              "durationMs": 302,
+              "message": ""
+            },
+            {
+              "name": "no plain-http resource references in HTML",
+              "file": "dast.spec.js",
+              "project": "chromium",
+              "status": "passed",
+              "durationMs": 182,
+              "message": ""
+            },
+            {
+              "name": "all external links use https",
+              "file": "dast.spec.js",
+              "project": "chromium",
+              "status": "passed",
+              "durationMs": 209,
+              "message": ""
+            },
+            {
+              "name": "remote scripts/styles are on an allowlisted origin",
+              "file": "dast.spec.js",
+              "project": "chromium",
+              "status": "passed",
+              "durationMs": 198,
+              "message": ""
+            },
+            {
+              "name": "all target=_blank links have rel=noopener",
+              "file": "dast.spec.js",
+              "project": "chromium",
+              "status": "passed",
+              "durationMs": 210,
+              "message": ""
+            },
+            {
+              "name": "mailto and CV links are well-formed",
+              "file": "dast.spec.js",
+              "project": "chromium",
+              "status": "passed",
+              "durationMs": 207,
+              "message": ""
+            },
+            {
+              "name": "no X-Powered-By header",
+              "file": "dast.spec.js",
+              "project": "chromium",
+              "status": "passed",
+              "durationMs": 6,
+              "message": ""
+            },
+            {
+              "name": "404 response does not disclose framework details",
+              "file": "dast.spec.js",
+              "project": "chromium",
+              "status": "passed",
+              "durationMs": 6,
+              "message": ""
+            },
+            {
+              "name": "local server rejects path traversal",
+              "file": "dast.spec.js",
+              "project": "chromium",
+              "status": "passed",
+              "durationMs": 6,
+              "message": ""
+            },
+            {
+              "name": "every in-page anchor resolves to an existing element id",
+              "file": "links.spec.js",
+              "project": "chromium",
+              "status": "passed",
+              "durationMs": 191,
+              "message": ""
+            },
+            {
+              "name": "nav links cover every major section on the page",
+              "file": "links.spec.js",
+              "project": "chromium",
+              "status": "passed",
+              "durationMs": 201,
+              "message": ""
+            },
+            {
+              "name": "external links open in a new tab with rel=noopener",
+              "file": "links.spec.js",
+              "project": "chromium",
+              "status": "passed",
+              "durationMs": 214,
+              "message": ""
+            },
+            {
+              "name": "mailto and CV download links are well-formed",
+              "file": "links.spec.js",
+              "project": "chromium",
+              "status": "passed",
+              "durationMs": 200,
+              "message": ""
+            },
+            {
+              "name": "hamburger is visible on mobile",
+              "file": "mobile-menu.spec.js",
+              "project": "chromium",
+              "status": "passed",
+              "durationMs": 195,
+              "message": ""
+            },
+            {
+              "name": "tapping the hamburger opens and closes the menu",
+              "file": "mobile-menu.spec.js",
+              "project": "chromium",
+              "status": "passed",
+              "durationMs": 338,
+              "message": ""
+            },
+            {
+              "name": "all eight links are fully visible when the menu is open",
+              "file": "mobile-menu.spec.js",
+              "project": "chromium",
+              "status": "passed",
+              "durationMs": 380,
+              "message": ""
+            },
+            {
+              "name": "tapping a link closes the menu and scrolls to the section",
+              "file": "mobile-menu.spec.js",
+              "project": "chromium",
+              "status": "passed",
+              "durationMs": 1765,
+              "message": ""
+            },
+            {
+              "name": "contact buttons fit without horizontal overflow",
+              "file": "mobile-menu.spec.js",
+              "project": "chromium",
+              "status": "passed",
+              "durationMs": 237,
+              "message": ""
+            },
+            {
+              "name": "hamburger is hidden and inline links are visible on desktop",
+              "file": "navigation.spec.js",
+              "project": "chromium",
+              "status": "passed",
+              "durationMs": 236,
+              "message": ""
+            },
+            {
+              "name": "nav gains .scrolled after scrolling past 10px",
+              "file": "navigation.spec.js",
+              "project": "chromium",
+              "status": "passed",
+              "durationMs": 883,
+              "message": ""
+            },
+            {
+              "name": "every nav link scrolls to its section",
+              "file": "navigation.spec.js",
+              "project": "chromium",
+              "status": "passed",
+              "durationMs": 2066,
+              "message": ""
+            },
+            {
+              "name": "logo and back-to-top return to the top",
+              "file": "navigation.spec.js",
+              "project": "chromium",
+              "status": "passed",
+              "durationMs": 329,
+              "message": ""
+            },
+            {
+              "name": "below-fold .reveal elements start hidden",
+              "file": "reveal.spec.js",
+              "project": "chromium",
+              "status": "passed",
+              "durationMs": 293,
+              "message": ""
+            },
+            {
+              "name": "scrolling reveals each section and it stays visible",
+              "file": "reveal.spec.js",
+              "project": "chromium",
+              "status": "passed",
+              "durationMs": 3877,
+              "message": ""
+            },
+            {
+              "name": "every .reveal element becomes visible after a full scroll",
+              "file": "reveal.spec.js",
+              "project": "chromium",
+              "status": "passed",
+              "durationMs": 3508,
+              "message": ""
+            },
+            {
+              "name": "no WCAG 2.1 AA violations at desktop size",
+              "file": "accessibility.spec.js",
+              "project": "firefox",
+              "status": "passed",
+              "durationMs": 2213,
+              "message": ""
+            },
+            {
+              "name": "no WCAG 2.1 AA violations at mobile size",
+              "file": "accessibility.spec.js",
+              "project": "firefox",
+              "status": "passed",
+              "durationMs": 1747,
+              "message": ""
+            },
+            {
+              "name": "keyboard-only navigation reaches all nav links and CTAs",
+              "file": "accessibility.spec.js",
+              "project": "firefox",
+              "status": "passed",
+              "durationMs": 1260,
+              "message": ""
+            },
+            {
+              "name": "focus is visible on interactive elements",
+              "file": "accessibility.spec.js",
+              "project": "firefox",
+              "status": "passed",
+              "durationMs": 1225,
+              "message": ""
+            },
+            {
+              "name": "mobile menu is operable by keyboard",
+              "file": "accessibility.spec.js",
+              "project": "firefox",
+              "status": "passed",
+              "durationMs": 1287,
+              "message": ""
+            },
+            {
+              "name": "title and meta description are present",
+              "file": "content.spec.js",
+              "project": "firefox",
+              "status": "passed",
+              "durationMs": 860,
+              "message": ""
+            },
+            {
+              "name": "Open Graph and Twitter card tags are present",
+              "file": "content.spec.js",
+              "project": "firefox",
+              "status": "passed",
+              "durationMs": 429,
+              "message": ""
+            },
+            {
+              "name": "all major sections render",
+              "file": "content.spec.js",
+              "project": "firefox",
+              "status": "passed",
+              "durationMs": 433,
+              "message": ""
+            },
+            {
+              "name": "expected counts: jobs, case studies, skill cards, projects, education",
+              "file": "content.spec.js",
+              "project": "firefox",
+              "status": "passed",
+              "durationMs": 427,
+              "message": ""
+            },
+            {
+              "name": "footer year matches the current year",
+              "file": "content.spec.js",
+              "project": "firefox",
+              "status": "passed",
+              "durationMs": 405,
+              "message": ""
+            },
+            {
+              "name": "no console errors on load",
+              "file": "content.spec.js",
+              "project": "firefox",
+              "status": "passed",
+              "durationMs": 905,
+              "message": ""
+            },
+            {
+              "name": "all local assets load without 404s",
+              "file": "content.spec.js",
+              "project": "firefox",
+              "status": "passed",
+              "durationMs": 432,
+              "message": ""
+            },
+            {
+              "name": "serves over HTTP in CI (TLS handled by GitHub Pages in prod)",
+              "file": "dast.spec.js",
+              "project": "firefox",
+              "status": "passed",
+              "durationMs": 1,
+              "message": ""
+            },
+            {
+              "name": "X-Content-Type-Options: nosniff",
+              "file": "dast.spec.js",
+              "project": "firefox",
+              "status": "passed",
+              "durationMs": 0,
+              "message": ""
+            },
+            {
+              "name": "X-Frame-Options or CSP frame-ancestors (clickjacking)",
+              "file": "dast.spec.js",
+              "project": "firefox",
+              "status": "passed",
+              "durationMs": 0,
+              "message": ""
+            },
+            {
+              "name": "Referrer-Policy set",
+              "file": "dast.spec.js",
+              "project": "firefox",
+              "status": "passed",
+              "durationMs": 0,
+              "message": ""
+            },
+            {
+              "name": "Permissions-Policy set",
+              "file": "dast.spec.js",
+              "project": "firefox",
+              "status": "passed",
+              "durationMs": 0,
+              "message": ""
+            },
+            {
+              "name": "Content-Security-Policy present",
+              "file": "dast.spec.js",
+              "project": "firefox",
+              "status": "passed",
+              "durationMs": 0,
+              "message": ""
+            },
+            {
+              "name": "no cookies set without Secure flag (none expected on static site)",
+              "file": "dast.spec.js",
+              "project": "firefox",
+              "status": "passed",
+              "durationMs": 392,
+              "message": ""
+            },
+            {
+              "name": "no http:// (mixed content) references in HTML",
+              "file": "dast.spec.js",
+              "project": "firefox",
+              "status": "passed",
+              "durationMs": 402,
+              "message": ""
+            },
+            {
+              "name": "all external links use https",
+              "file": "dast.spec.js",
+              "project": "firefox",
+              "status": "passed",
+              "durationMs": 1134,
+              "message": ""
+            },
+            {
+              "name": "no inline event handlers (onclick= etc.)",
+              "file": "dast.spec.js",
+              "project": "firefox",
+              "status": "passed",
+              "durationMs": 518,
+              "message": ""
+            },
+            {
+              "name": "no script execution from URL hash (reflected XSS surface)",
+              "file": "dast.spec.js",
+              "project": "firefox",
+              "status": "passed",
+              "durationMs": 903,
+              "message": ""
+            },
+            {
+              "name": "no script execution from query string",
+              "file": "dast.spec.js",
+              "project": "firefox",
+              "status": "passed",
+              "durationMs": 883,
+              "message": ""
+            },
+            {
+              "name": "no eval() or Function() constructor in main.js",
+              "file": "dast.spec.js",
+              "project": "firefox",
+              "status": "passed",
+              "durationMs": 4,
+              "message": ""
+            },
+            {
+              "name": "no document.write in main.js",
+              "file": "dast.spec.js",
+              "project": "firefox",
+              "status": "passed",
+              "durationMs": 3,
+              "message": ""
+            },
+            {
+              "name": "page cannot be framed (XFO or CSP)",
+              "file": "dast.spec.js",
+              "project": "firefox",
+              "status": "passed",
+              "durationMs": 1271,
+              "message": ""
+            },
+            {
+              "name": "no server version headers",
+              "file": "dast.spec.js",
+              "project": "firefox",
+              "status": "passed",
+              "durationMs": 3,
+              "message": ""
+            },
+            {
+              "name": "no X-Powered-By header",
+              "file": "dast.spec.js",
+              "project": "firefox",
+              "status": "passed",
+              "durationMs": 3,
+              "message": ""
+            },
+            {
+              "name": "404 page does not disclose framework details",
+              "file": "dast.spec.js",
+              "project": "firefox",
+              "status": "passed",
+              "durationMs": 3,
+              "message": ""
+            },
+            {
+              "name": "all target=_blank links have rel=noopener",
+              "file": "dast.spec.js",
+              "project": "firefox",
+              "status": "passed",
+              "durationMs": 400,
+              "message": ""
+            },
+            {
+              "name": "mailto and CV links are well-formed",
+              "file": "dast.spec.js",
+              "project": "firefox",
+              "status": "passed",
+              "durationMs": 434,
+              "message": ""
+            },
+            {
+              "name": "CSP script-src does not allow unsafe-inline or unsafe-eval",
+              "file": "dast.spec.js",
+              "project": "firefox",
+              "status": "passed",
+              "durationMs": 4,
+              "message": ""
+            },
+            {
+              "name": "CSP script-src restricts sources",
+              "file": "dast.spec.js",
+              "project": "firefox",
+              "status": "passed",
+              "durationMs": 3,
+              "message": ""
+            },
+            {
+              "name": "every in-page anchor resolves to an existing element id",
+              "file": "links.spec.js",
+              "project": "firefox",
+              "status": "passed",
+              "durationMs": 398,
+              "message": ""
+            },
+            {
+              "name": "nav links cover every major section on the page",
+              "file": "links.spec.js",
+              "project": "firefox",
+              "status": "passed",
+              "durationMs": 395,
+              "message": ""
+            },
+            {
+              "name": "external links open in a new tab with rel=noopener",
+              "file": "links.spec.js",
+              "project": "firefox",
+              "status": "passed",
+              "durationMs": 381,
+              "message": ""
+            },
+            {
+              "name": "mailto and CV download links are well-formed",
+              "file": "links.spec.js",
+              "project": "firefox",
+              "status": "passed",
+              "durationMs": 410,
+              "message": ""
+            },
+            {
+              "name": "hamburger is visible on mobile",
+              "file": "mobile-menu.spec.js",
+              "project": "firefox",
+              "status": "passed",
+              "durationMs": 1083,
+              "message": ""
+            },
+            {
+              "name": "tapping the hamburger opens and closes the menu",
+              "file": "mobile-menu.spec.js",
+              "project": "firefox",
+              "status": "passed",
+              "durationMs": 604,
+              "message": ""
+            },
+            {
+              "name": "all seven links are fully visible when the menu is open",
+              "file": "mobile-menu.spec.js",
+              "project": "firefox",
+              "status": "passed",
+              "durationMs": 505,
+              "message": ""
+            },
+            {
+              "name": "tapping a link closes the menu and scrolls to the section",
+              "file": "mobile-menu.spec.js",
+              "project": "firefox",
+              "status": "passed",
+              "durationMs": 829,
+              "message": ""
+            },
+            {
+              "name": "contact buttons fit without horizontal overflow",
+              "file": "mobile-menu.spec.js",
+              "project": "firefox",
+              "status": "passed",
+              "durationMs": 385,
+              "message": ""
+            },
+            {
+              "name": "hamburger is hidden and inline links are visible on desktop",
+              "file": "navigation.spec.js",
+              "project": "firefox",
+              "status": "passed",
+              "durationMs": 403,
+              "message": ""
+            },
+            {
+              "name": "nav gains .scrolled after scrolling past 10px",
+              "file": "navigation.spec.js",
+              "project": "firefox",
+              "status": "passed",
+              "durationMs": 1297,
+              "message": ""
+            },
+            {
+              "name": "every nav link scrolls to its section",
+              "file": "navigation.spec.js",
+              "project": "firefox",
+              "status": "passed",
+              "durationMs": 3222,
+              "message": ""
+            },
+            {
+              "name": "logo and back-to-top return to the top",
+              "file": "navigation.spec.js",
+              "project": "firefox",
+              "status": "passed",
+              "durationMs": 2536,
+              "message": ""
+            },
+            {
+              "name": "below-fold .reveal elements start hidden",
+              "file": "reveal.spec.js",
+              "project": "firefox",
+              "status": "passed",
+              "durationMs": 414,
+              "message": ""
+            },
+            {
+              "name": "scrolling reveals each section and it stays visible",
+              "file": "reveal.spec.js",
+              "project": "firefox",
+              "status": "passed",
+              "durationMs": 1620,
+              "message": ""
+            },
+            {
+              "name": "every .reveal element becomes visible after a full scroll",
+              "file": "reveal.spec.js",
+              "project": "firefox",
+              "status": "passed",
+              "durationMs": 3735,
+              "message": ""
+            }
+          ],
+          "detail": []
+        },
+        "visual": {
+          "total": 32,
+          "passed": 32,
+          "failed": 0,
+          "skipped": 0,
+          "flaky": 0,
+          "durationMs": 35204,
+          "status": "pass",
+          "projects": {
+            "chromium": {
+              "total": 16,
+              "passed": 16,
+              "failed": 0
+            },
+            "firefox": {
+              "total": 16,
+              "passed": 16,
+              "failed": 0
+            }
+          },
+          "tests": [
+            {
+              "name": "full page",
+              "file": "visual.spec.js",
+              "project": "chromium",
+              "status": "passed",
+              "durationMs": 3275,
+              "message": ""
+            },
+            {
+              "name": "section #hero",
+              "file": "visual.spec.js",
+              "project": "chromium",
+              "status": "passed",
+              "durationMs": 2484,
+              "message": ""
+            },
+            {
+              "name": "section #about",
+              "file": "visual.spec.js",
+              "project": "chromium",
+              "status": "passed",
+              "durationMs": 2495,
+              "message": ""
+            },
+            {
+              "name": "section #experience",
+              "file": "visual.spec.js",
+              "project": "chromium",
+              "status": "passed",
+              "durationMs": 2866,
+              "message": ""
+            },
+            {
+              "name": "section #case-studies",
+              "file": "visual.spec.js",
+              "project": "chromium",
+              "status": "passed",
+              "durationMs": 2454,
+              "message": ""
+            },
+            {
+              "name": "section #skills",
+              "file": "visual.spec.js",
+              "project": "chromium",
+              "status": "passed",
+              "durationMs": 2449,
+              "message": ""
+            },
+            {
+              "name": "section #projects",
+              "file": "visual.spec.js",
+              "project": "chromium",
+              "status": "passed",
+              "durationMs": 2401,
+              "message": ""
+            },
+            {
+              "name": "section #contact",
+              "file": "visual.spec.js",
+              "project": "chromium",
+              "status": "passed",
+              "durationMs": 2415,
+              "message": ""
+            },
+            {
+              "name": "full page",
+              "file": "visual.spec.js",
+              "project": "chromium",
+              "status": "passed",
+              "durationMs": 6417,
+              "message": ""
+            },
+            {
+              "name": "section #hero",
+              "file": "visual.spec.js",
+              "project": "chromium",
+              "status": "passed",
+              "durationMs": 3856,
+              "message": ""
+            },
+            {
+              "name": "section #about",
+              "file": "visual.spec.js",
+              "project": "chromium",
+              "status": "passed",
+              "durationMs": 3916,
+              "message": ""
+            },
+            {
+              "name": "section #experience",
+              "file": "visual.spec.js",
+              "project": "chromium",
+              "status": "passed",
+              "durationMs": 4897,
+              "message": ""
+            },
+            {
+              "name": "section #case-studies",
+              "file": "visual.spec.js",
+              "project": "chromium",
+              "status": "passed",
+              "durationMs": 3846,
+              "message": ""
+            },
+            {
+              "name": "section #skills",
+              "file": "visual.spec.js",
+              "project": "chromium",
+              "status": "passed",
+              "durationMs": 4263,
+              "message": ""
+            },
+            {
+              "name": "section #projects",
+              "file": "visual.spec.js",
+              "project": "chromium",
+              "status": "passed",
+              "durationMs": 3674,
+              "message": ""
+            },
+            {
+              "name": "section #contact",
+              "file": "visual.spec.js",
+              "project": "chromium",
+              "status": "passed",
+              "durationMs": 3074,
+              "message": ""
+            },
+            {
+              "name": "full page",
+              "file": "visual.spec.js",
+              "project": "firefox",
+              "status": "passed",
+              "durationMs": 3149,
+              "message": ""
+            },
+            {
+              "name": "section #hero",
+              "file": "visual.spec.js",
+              "project": "firefox",
+              "status": "passed",
+              "durationMs": 2658,
+              "message": ""
+            },
+            {
+              "name": "section #about",
+              "file": "visual.spec.js",
+              "project": "firefox",
+              "status": "passed",
+              "durationMs": 2609,
+              "message": ""
+            },
+            {
+              "name": "section #experience",
+              "file": "visual.spec.js",
+              "project": "firefox",
+              "status": "passed",
+              "durationMs": 2650,
+              "message": ""
+            },
+            {
+              "name": "section #case-studies",
+              "file": "visual.spec.js",
+              "project": "firefox",
+              "status": "passed",
+              "durationMs": 2621,
+              "message": ""
+            },
+            {
+              "name": "section #skills",
+              "file": "visual.spec.js",
+              "project": "firefox",
+              "status": "passed",
+              "durationMs": 2626,
+              "message": ""
+            },
+            {
+              "name": "section #projects",
+              "file": "visual.spec.js",
+              "project": "firefox",
+              "status": "passed",
+              "durationMs": 2584,
+              "message": ""
+            },
+            {
+              "name": "section #contact",
+              "file": "visual.spec.js",
+              "project": "firefox",
+              "status": "passed",
+              "durationMs": 2528,
+              "message": ""
+            },
+            {
+              "name": "full page",
+              "file": "visual.spec.js",
+              "project": "firefox",
+              "status": "passed",
+              "durationMs": 4328,
+              "message": ""
+            },
+            {
+              "name": "section #hero",
+              "file": "visual.spec.js",
+              "project": "firefox",
+              "status": "passed",
+              "durationMs": 3408,
+              "message": ""
+            },
+            {
+              "name": "section #about",
+              "file": "visual.spec.js",
+              "project": "firefox",
+              "status": "passed",
+              "durationMs": 3289,
+              "message": ""
+            },
+            {
+              "name": "section #experience",
+              "file": "visual.spec.js",
+              "project": "firefox",
+              "status": "passed",
+              "durationMs": 3308,
+              "message": ""
+            },
+            {
+              "name": "section #case-studies",
+              "file": "visual.spec.js",
+              "project": "firefox",
+              "status": "passed",
+              "durationMs": 3305,
+              "message": ""
+            },
+            {
+              "name": "section #skills",
+              "file": "visual.spec.js",
+              "project": "firefox",
+              "status": "passed",
+              "durationMs": 3373,
+              "message": ""
+            },
+            {
+              "name": "section #projects",
+              "file": "visual.spec.js",
+              "project": "firefox",
+              "status": "passed",
+              "durationMs": 3277,
+              "message": ""
+            },
+            {
+              "name": "section #contact",
+              "file": "visual.spec.js",
+              "project": "firefox",
+              "status": "passed",
+              "durationMs": 3249,
+              "message": ""
+            }
+          ],
+          "detail": []
+        },
+        "sast": {
+          "findings": 0,
+          "errors": 0,
+          "status": "pass",
+          "tests": [],
+          "detail": []
+        }
+      }
+    },
+    {
       "date": "2026-09-15T22:22:06.359Z",
       "commit": "8bc036f",
       "branch": "master",
