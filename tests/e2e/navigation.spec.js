@@ -49,7 +49,18 @@ test.describe("desktop navigation", () => {
       document.querySelectorAll(".reveal").forEach((el) => el.classList.add("visible"));
     });
 
+    // Scroll to the bottom (clamped by the browser) and wait until it holds.
     await page.evaluate(() => window.scrollTo(0, document.body.scrollHeight));
+    const maxY = await page.evaluate(() => window.scrollY);
+    await expect
+      .poll(async () => {
+        const [y, h] = await page.evaluate(() => [
+          window.scrollY,
+          document.body.scrollHeight,
+        ]);
+        return y >= Math.min(h, maxY) - 10;
+      }, { timeout: 10_000 })
+      .toBe(true);
     await page.locator(".footer__top").click();
     await expect
       .poll(() => page.evaluate(() => window.scrollY), { timeout: 10_000 })
