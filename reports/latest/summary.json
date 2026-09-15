@@ -1,6 +1,6 @@
 {
-  "date": "2026-09-15T22:11:45.060Z",
-  "commit": "0cc8169",
+  "date": "2026-09-15T22:19:17.870Z",
+  "commit": "5a01693",
   "branch": "master",
   "suites": {
     "unit": {
@@ -8,84 +8,84 @@
       "passed": 11,
       "failed": 0,
       "skipped": 0,
-      "durationMs": 67.4853515625,
+      "durationMs": 47.09619140625,
       "status": "pass",
       "tests": [
         {
           "name": "initNav adds .scrolled when scrollY > 10",
           "file": "/home/runner/work/danielmoreno.dev/danielmoreno.dev/tests/unit/main.test.js",
           "status": "passed",
-          "durationMs": 20.161871999999903,
+          "durationMs": 15.265732999999955,
           "message": ""
         },
         {
           "name": "initNav removes .scrolled when back at top",
           "file": "/home/runner/work/danielmoreno.dev/danielmoreno.dev/tests/unit/main.test.js",
           "status": "passed",
-          "durationMs": 6.687010999999984,
+          "durationMs": 4.528033999999934,
           "message": ""
         },
         {
           "name": "initNav does not add .scrolled at exactly 10px (threshold is > 10)",
           "file": "/home/runner/work/danielmoreno.dev/danielmoreno.dev/tests/unit/main.test.js",
           "status": "passed",
-          "durationMs": 6.272359999999935,
+          "durationMs": 3.4782519999999977,
           "message": ""
         },
         {
           "name": "initNav toggles .open on the links when the hamburger is clicked",
           "file": "/home/runner/work/danielmoreno.dev/danielmoreno.dev/tests/unit/main.test.js",
           "status": "passed",
-          "durationMs": 9.675059000000033,
+          "durationMs": 5.664614000000029,
           "message": ""
         },
         {
           "name": "initNav closes the menu when a nav link is clicked",
           "file": "/home/runner/work/danielmoreno.dev/danielmoreno.dev/tests/unit/main.test.js",
           "status": "passed",
-          "durationMs": 7.655623999999989,
+          "durationMs": 6.612747000000013,
           "message": ""
         },
         {
           "name": "initReveal observes every .reveal element with the 0.12 threshold",
           "file": "/home/runner/work/danielmoreno.dev/danielmoreno.dev/tests/unit/main.test.js",
           "status": "passed",
-          "durationMs": 6.009010000000103,
+          "durationMs": 3.2548329999999623,
           "message": ""
         },
         {
           "name": "initReveal assigns staggered transitionDelay of (i % 4) * 70ms",
           "file": "/home/runner/work/danielmoreno.dev/danielmoreno.dev/tests/unit/main.test.js",
           "status": "passed",
-          "durationMs": 2.749194999999986,
+          "durationMs": 2.1007569999999305,
           "message": ""
         },
         {
           "name": "initReveal adds .visible when the element intersects and stops observing it",
           "file": "/home/runner/work/danielmoreno.dev/danielmoreno.dev/tests/unit/main.test.js",
           "status": "passed",
-          "durationMs": 2.9590149999999085,
+          "durationMs": 1.9647979999999734,
           "message": ""
         },
         {
           "name": "initReveal ignores non-intersecting entries",
           "file": "/home/runner/work/danielmoreno.dev/danielmoreno.dev/tests/unit/main.test.js",
           "status": "passed",
-          "durationMs": 2.313633999999979,
+          "durationMs": 1.5188319999999749,
           "message": ""
         },
         {
           "name": "setYear writes the current year into #year",
           "file": "/home/runner/work/danielmoreno.dev/danielmoreno.dev/tests/unit/main.test.js",
           "status": "passed",
-          "durationMs": 1.264682999999991,
+          "durationMs": 0.9497860000000173,
           "message": ""
         },
         {
           "name": "setYear is a no-op when #year is missing",
           "file": "/home/runner/work/danielmoreno.dev/danielmoreno.dev/tests/unit/main.test.js",
           "status": "passed",
-          "durationMs": 1.4853939999999284,
+          "durationMs": 1.0962110000000393,
           "message": ""
         }
       ],
@@ -97,7 +97,7 @@
       "failed": 0,
       "flaky": 0,
       "skipped": 0,
-      "durationMs": 150867,
+      "durationMs": 142715,
       "status": "pass",
       "projects": {
         "chromium": {
@@ -117,7 +117,7 @@
           "file": "accessibility.spec.js",
           "project": "chromium",
           "status": "passed",
-          "durationMs": 2409,
+          "durationMs": 2294,
           "message": ""
         },
         {
@@ -125,7 +125,7 @@
           "file": "accessibility.spec.js",
           "project": "chromium",
           "status": "passed",
-          "durationMs": 2090,
+          "durationMs": 1858,
           "message": ""
         },
         {
@@ -133,7 +133,7 @@
           "file": "accessibility.spec.js",
           "project": "chromium",
           "status": "passed",
-          "durationMs": 1519,
+          "durationMs": 1157,
           "message": ""
         },
         {
@@ -141,7 +141,7 @@
           "file": "accessibility.spec.js",
           "project": "chromium",
           "status": "passed",
-          "durationMs": 1493,
+          "durationMs": 1076,
           "message": ""
         },
         {
@@ -149,7 +149,7 @@
           "file": "accessibility.spec.js",
           "project": "chromium",
           "status": "passed",
-          "durationMs": 1535,
+          "durationMs": 1154,
           "message": ""
         },
         {
@@ -157,7 +157,7 @@
           "file": "content.spec.js",
           "project": "chromium",
           "status": "passed",
-          "durationMs": 813,
+          "durationMs": 465,
           "message": ""
         },
         {
@@ -165,7 +165,7 @@
           "file": "content.spec.js",
           "project": "chromium",
           "status": "passed",
-          "durationMs": 698,
+          "durationMs": 291,
           "message": ""
         },
         {
@@ -173,7 +173,7 @@
           "file": "content.spec.js",
           "project": "chromium",
           "status": "passed",
-          "durationMs": 730,
+          "durationMs": 320,
           "message": ""
         },
         {
@@ -181,7 +181,7 @@
           "file": "content.spec.js",
           "project": "chromium",
           "status": "passed",
-          "durationMs": 684,
+          "durationMs": 340,
           "message": ""
         },
         {
@@ -189,7 +189,7 @@
           "file": "content.spec.js",
           "project": "chromium",
           "status": "passed",
-          "durationMs": 663,
+          "durationMs": 329,
           "message": ""
         },
         {
@@ -197,7 +197,7 @@
           "file": "content.spec.js",
           "project": "chromium",
           "status": "passed",
-          "durationMs": 1151,
+          "durationMs": 804,
           "message": ""
         },
         {
@@ -205,7 +205,7 @@
           "file": "content.spec.js",
           "project": "chromium",
           "status": "passed",
-          "durationMs": 719,
+          "durationMs": 310,
           "message": ""
         },
         {
@@ -221,7 +221,7 @@
           "file": "dast.spec.js",
           "project": "chromium",
           "status": "passed",
-          "durationMs": 1,
+          "durationMs": 2,
           "message": ""
         },
         {
@@ -229,7 +229,7 @@
           "file": "dast.spec.js",
           "project": "chromium",
           "status": "passed",
-          "durationMs": 19,
+          "durationMs": 25,
           "message": ""
         },
         {
@@ -253,7 +253,7 @@
           "file": "dast.spec.js",
           "project": "chromium",
           "status": "passed",
-          "durationMs": 1,
+          "durationMs": 2,
           "message": ""
         },
         {
@@ -261,7 +261,7 @@
           "file": "dast.spec.js",
           "project": "chromium",
           "status": "passed",
-          "durationMs": 5,
+          "durationMs": 8,
           "message": ""
         },
         {
@@ -269,7 +269,7 @@
           "file": "dast.spec.js",
           "project": "chromium",
           "status": "passed",
-          "durationMs": 1,
+          "durationMs": 2,
           "message": ""
         },
         {
@@ -277,7 +277,7 @@
           "file": "dast.spec.js",
           "project": "chromium",
           "status": "passed",
-          "durationMs": 2,
+          "durationMs": 5,
           "message": ""
         },
         {
@@ -285,7 +285,7 @@
           "file": "dast.spec.js",
           "project": "chromium",
           "status": "passed",
-          "durationMs": 0,
+          "durationMs": 1,
           "message": ""
         },
         {
@@ -293,7 +293,7 @@
           "file": "dast.spec.js",
           "project": "chromium",
           "status": "passed",
-          "durationMs": 368,
+          "durationMs": 273,
           "message": ""
         },
         {
@@ -301,7 +301,7 @@
           "file": "dast.spec.js",
           "project": "chromium",
           "status": "passed",
-          "durationMs": 2066,
+          "durationMs": 2088,
           "message": ""
         },
         {
@@ -309,7 +309,7 @@
           "file": "dast.spec.js",
           "project": "chromium",
           "status": "passed",
-          "durationMs": 1888,
+          "durationMs": 1725,
           "message": ""
         },
         {
@@ -317,7 +317,7 @@
           "file": "dast.spec.js",
           "project": "chromium",
           "status": "passed",
-          "durationMs": 1849,
+          "durationMs": 1696,
           "message": ""
         },
         {
@@ -325,7 +325,7 @@
           "file": "dast.spec.js",
           "project": "chromium",
           "status": "passed",
-          "durationMs": 1109,
+          "durationMs": 749,
           "message": ""
         },
         {
@@ -333,7 +333,7 @@
           "file": "dast.spec.js",
           "project": "chromium",
           "status": "passed",
-          "durationMs": 7,
+          "durationMs": 15,
           "message": ""
         },
         {
@@ -341,7 +341,7 @@
           "file": "dast.spec.js",
           "project": "chromium",
           "status": "passed",
-          "durationMs": 6,
+          "durationMs": 16,
           "message": ""
         },
         {
@@ -349,7 +349,7 @@
           "file": "dast.spec.js",
           "project": "chromium",
           "status": "passed",
-          "durationMs": 437,
+          "durationMs": 348,
           "message": ""
         },
         {
@@ -357,7 +357,7 @@
           "file": "dast.spec.js",
           "project": "chromium",
           "status": "passed",
-          "durationMs": 337,
+          "durationMs": 208,
           "message": ""
         },
         {
@@ -365,7 +365,7 @@
           "file": "dast.spec.js",
           "project": "chromium",
           "status": "passed",
-          "durationMs": 353,
+          "durationMs": 217,
           "message": ""
         },
         {
@@ -373,7 +373,7 @@
           "file": "dast.spec.js",
           "project": "chromium",
           "status": "passed",
-          "durationMs": 328,
+          "durationMs": 193,
           "message": ""
         },
         {
@@ -381,7 +381,7 @@
           "file": "dast.spec.js",
           "project": "chromium",
           "status": "passed",
-          "durationMs": 353,
+          "durationMs": 219,
           "message": ""
         },
         {
@@ -389,7 +389,7 @@
           "file": "dast.spec.js",
           "project": "chromium",
           "status": "passed",
-          "durationMs": 345,
+          "durationMs": 234,
           "message": ""
         },
         {
@@ -397,7 +397,7 @@
           "file": "dast.spec.js",
           "project": "chromium",
           "status": "passed",
-          "durationMs": 4,
+          "durationMs": 10,
           "message": ""
         },
         {
@@ -405,7 +405,7 @@
           "file": "dast.spec.js",
           "project": "chromium",
           "status": "passed",
-          "durationMs": 4,
+          "durationMs": 5,
           "message": ""
         },
         {
@@ -413,7 +413,7 @@
           "file": "dast.spec.js",
           "project": "chromium",
           "status": "passed",
-          "durationMs": 4,
+          "durationMs": 7,
           "message": ""
         },
         {
@@ -421,7 +421,7 @@
           "file": "links.spec.js",
           "project": "chromium",
           "status": "passed",
-          "durationMs": 641,
+          "durationMs": 268,
           "message": ""
         },
         {
@@ -429,7 +429,7 @@
           "file": "links.spec.js",
           "project": "chromium",
           "status": "passed",
-          "durationMs": 623,
+          "durationMs": 245,
           "message": ""
         },
         {
@@ -437,7 +437,7 @@
           "file": "links.spec.js",
           "project": "chromium",
           "status": "passed",
-          "durationMs": 662,
+          "durationMs": 238,
           "message": ""
         },
         {
@@ -445,7 +445,7 @@
           "file": "links.spec.js",
           "project": "chromium",
           "status": "passed",
-          "durationMs": 645,
+          "durationMs": 248,
           "message": ""
         },
         {
@@ -453,7 +453,7 @@
           "file": "mobile-menu.spec.js",
           "project": "chromium",
           "status": "passed",
-          "durationMs": 628,
+          "durationMs": 232,
           "message": ""
         },
         {
@@ -461,7 +461,7 @@
           "file": "mobile-menu.spec.js",
           "project": "chromium",
           "status": "passed",
-          "durationMs": 780,
+          "durationMs": 440,
           "message": ""
         },
         {
@@ -469,7 +469,7 @@
           "file": "mobile-menu.spec.js",
           "project": "chromium",
           "status": "passed",
-          "durationMs": 854,
+          "durationMs": 397,
           "message": ""
         },
         {
@@ -477,7 +477,7 @@
           "file": "mobile-menu.spec.js",
           "project": "chromium",
           "status": "passed",
-          "durationMs": 2188,
+          "durationMs": 1875,
           "message": ""
         },
         {
@@ -485,7 +485,7 @@
           "file": "mobile-menu.spec.js",
           "project": "chromium",
           "status": "passed",
-          "durationMs": 635,
+          "durationMs": 309,
           "message": ""
         },
         {
@@ -493,7 +493,7 @@
           "file": "navigation.spec.js",
           "project": "chromium",
           "status": "passed",
-          "durationMs": 644,
+          "durationMs": 295,
           "message": ""
         },
         {
@@ -501,7 +501,7 @@
           "file": "navigation.spec.js",
           "project": "chromium",
           "status": "passed",
-          "durationMs": 1271,
+          "durationMs": 978,
           "message": ""
         },
         {
@@ -509,7 +509,7 @@
           "file": "navigation.spec.js",
           "project": "chromium",
           "status": "passed",
-          "durationMs": 2507,
+          "durationMs": 2227,
           "message": ""
         },
         {
@@ -517,7 +517,7 @@
           "file": "navigation.spec.js",
           "project": "chromium",
           "status": "passed",
-          "durationMs": 780,
+          "durationMs": 396,
           "message": ""
         },
         {
@@ -525,7 +525,7 @@
           "file": "reveal.spec.js",
           "project": "chromium",
           "status": "passed",
-          "durationMs": 660,
+          "durationMs": 327,
           "message": ""
         },
         {
@@ -533,7 +533,7 @@
           "file": "reveal.spec.js",
           "project": "chromium",
           "status": "passed",
-          "durationMs": 4313,
+          "durationMs": 3878,
           "message": ""
         },
         {
@@ -541,7 +541,7 @@
           "file": "reveal.spec.js",
           "project": "chromium",
           "status": "passed",
-          "durationMs": 3941,
+          "durationMs": 3541,
           "message": ""
         },
         {
@@ -953,7 +953,7 @@
       "failed": 0,
       "skipped": 0,
       "flaky": 0,
-      "durationMs": 37717,
+      "durationMs": 35679,
       "status": "pass",
       "projects": {
         "chromium": {
@@ -973,7 +973,7 @@
           "file": "visual.spec.js",
           "project": "chromium",
           "status": "passed",
-          "durationMs": 3676,
+          "durationMs": 3609,
           "message": ""
         },
         {
@@ -981,7 +981,7 @@
           "file": "visual.spec.js",
           "project": "chromium",
           "status": "passed",
-          "durationMs": 2920,
+          "durationMs": 2579,
           "message": ""
         },
         {
@@ -989,7 +989,7 @@
           "file": "visual.spec.js",
           "project": "chromium",
           "status": "passed",
-          "durationMs": 2906,
+          "durationMs": 2558,
           "message": ""
         },
         {
@@ -997,7 +997,7 @@
           "file": "visual.spec.js",
           "project": "chromium",
           "status": "passed",
-          "durationMs": 3062,
+          "durationMs": 2642,
           "message": ""
         },
         {
@@ -1005,7 +1005,7 @@
           "file": "visual.spec.js",
           "project": "chromium",
           "status": "passed",
-          "durationMs": 2901,
+          "durationMs": 2536,
           "message": ""
         },
         {
@@ -1013,7 +1013,7 @@
           "file": "visual.spec.js",
           "project": "chromium",
           "status": "passed",
-          "durationMs": 2909,
+          "durationMs": 2549,
           "message": ""
         },
         {
@@ -1021,7 +1021,7 @@
           "file": "visual.spec.js",
           "project": "chromium",
           "status": "passed",
-          "durationMs": 2830,
+          "durationMs": 2466,
           "message": ""
         },
         {
@@ -1029,7 +1029,7 @@
           "file": "visual.spec.js",
           "project": "chromium",
           "status": "passed",
-          "durationMs": 2864,
+          "durationMs": 2540,
           "message": ""
         },
         {
@@ -1037,7 +1037,7 @@
           "file": "visual.spec.js",
           "project": "chromium",
           "status": "passed",
-          "durationMs": 6497,
+          "durationMs": 6759,
           "message": ""
         },
         {
@@ -1045,7 +1045,7 @@
           "file": "visual.spec.js",
           "project": "chromium",
           "status": "passed",
-          "durationMs": 4308,
+          "durationMs": 3987,
           "message": ""
         },
         {
@@ -1053,7 +1053,7 @@
           "file": "visual.spec.js",
           "project": "chromium",
           "status": "passed",
-          "durationMs": 4378,
+          "durationMs": 4062,
           "message": ""
         },
         {
@@ -1061,7 +1061,7 @@
           "file": "visual.spec.js",
           "project": "chromium",
           "status": "passed",
-          "durationMs": 4638,
+          "durationMs": 4400,
           "message": ""
         },
         {
@@ -1069,7 +1069,7 @@
           "file": "visual.spec.js",
           "project": "chromium",
           "status": "passed",
-          "durationMs": 4324,
+          "durationMs": 4066,
           "message": ""
         },
         {
@@ -1077,7 +1077,7 @@
           "file": "visual.spec.js",
           "project": "chromium",
           "status": "passed",
-          "durationMs": 4362,
+          "durationMs": 4130,
           "message": ""
         },
         {
@@ -1085,7 +1085,7 @@
           "file": "visual.spec.js",
           "project": "chromium",
           "status": "passed",
-          "durationMs": 4126,
+          "durationMs": 3827,
           "message": ""
         },
         {
@@ -1093,7 +1093,7 @@
           "file": "visual.spec.js",
           "project": "chromium",
           "status": "passed",
-          "durationMs": 3541,
+          "durationMs": 3161,
           "message": ""
         },
         {
