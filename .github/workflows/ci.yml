@@ -177,27 +177,35 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-          # Check out gh-pages, creating it from the default branch if missing.
-          if git ls-remote --exit-code --heads origin gh-pages >/dev/null 2>&1; then
-            git fetch origin gh-pages
-            git checkout -B gh-pages FETCH_HEAD
-          else
-            git checkout --orphan gh-pages
-          fi
+          # Build the deploy tree in a clean temp worktree so the copy always
+          # diffs against an empty index (avoids the "already up to date" trap).
+          DEPLOY_DIR="$(mktemp -d)"
+          git init -q "$DEPLOY_DIR"
+          cd "$DEPLOY_DIR"
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
 
-          # Remove everything, then copy the public site files over.
-          git rm -rf . >/dev/null 2>&1 || true
+          # Copy the public site files from the default-branch checkout.
+          SRC="$GITHUB_WORKSPACE"
           for f in index.html report.html suite.html \
                    main.js report.js suite.js \
                    style.css report.css \
                    _headers CV.pdf og-image.png reports; do
-            if [ -e "$f" ]; then cp -r "$f" .; fi
+            if [ -e "$SRC/$f" ]; then cp -r "$SRC/$f" .; fi
           done
 
           git add -A
           if git diff --cached --quiet; then
-            echo "gh-pages already up to date."
+            echo "Nothing to deploy."
           else
-            git commit -m "deploy: sync site from ${GITHUB_REF_NAME} @ ${GITHUB_SHA:0:7}"
-            git push origin gh-pages
+            # Push onto the existing gh-pages branch (or create it).
+            if git ls-remote --exit-code --heads origin gh-pages >/dev/null 2>&1; then
+              git fetch -q origin gh-pages
+              git reset -q --soft FETCH_HEAD
+              git commit -q -m "deploy: sync site from ${GITHUB_REF_NAME} @ ${GITHUB_SHA:0:7}"
+            else
+              git checkout -q -b gh-pages
+              git commit -q -m "deploy: sync site from ${GITHUB_REF_NAME} @ ${GITHUB_SHA:0:7}"
+            fi
+            git push origin HEAD:gh-pages
           fi
