@@ -44,8 +44,8 @@ jobs:
       - run: npm ci
       # Gate on the suite AND emit JSON for the dashboard in one pass.
       - run: |
-          npx vitest run --reporter=default,json --outputFile=reports/latest/vitest.json
           mkdir -p reports/latest
+          npx vitest run --reporter=default --reporter=json --outputFile=reports/latest/vitest.json
       - uses: actions/upload-artifact@v4
         if: always()
         with:
@@ -112,6 +112,14 @@ jobs:
           name: report-e2e-${{ matrix.project }}
           path: reports/latest/playwright-${{ matrix.project }}.json
           retention-days: 7
+      # When baselines are missing, Playwright writes the actuals into the
+      # snapshots dir; upload them so they can be committed from the artifact.
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: e2e-snapshots-${{ matrix.project }}
+          path: tests/e2e/visual.spec.js-snapshots/
+          retention-days: 7
 
   # Builds the dashboard data (reports/history.json + reports/latest/*) from the
   # artifacts produced above and commits it back to main so GitHub Pages serves it.
@@ -153,5 +161,5 @@ jobs:
             echo "No report changes to commit."
           else
             git commit -m "chore(reports): update quality lab data [skip ci]"
-            git push origin HEAD:main
+            git push origin HEAD:${GITHUB_REF_NAME}
           fi

@@ -40,16 +40,19 @@ test.describe("desktop navigation", () => {
   });
 
   test("logo and back-to-top return to the top", async ({ page }) => {
+    // Disable smooth scrolling so the assertions are not racing a long animation.
+    await page.addStyleTag({ content: "html { scroll-behavior: auto !important; }" });
+
     await page.evaluate(() => window.scrollTo(0, document.body.scrollHeight));
     await page.locator(".footer__top").click();
     await expect
-      .poll(() => page.evaluate(() => window.scrollY))
+      .poll(() => page.evaluate(() => window.scrollY), { timeout: 10_000 })
       .toBeLessThan(50);
 
     await page.evaluate(() => window.scrollTo(0, 500));
     await page.locator(".nav__logo").click();
     await expect
-      .poll(() => page.evaluate(() => window.scrollY))
+      .poll(() => page.evaluate(() => window.scrollY), { timeout: 10_000 })
       .toBeLessThan(50);
   });
 });

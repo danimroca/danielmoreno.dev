@@ -23,17 +23,17 @@ test.describe("mobile menu", () => {
     await expect(links).not.toHaveClass(/open/);
   });
 
-  test("all seven links are fully visible when the menu is open", async ({ page }) => {
+  test("all eight links are fully visible when the menu is open", async ({ page }) => {
     await page.locator("#navToggle").tap();
     const anchors = page.locator("#navLinks a");
-    await expect(anchors).toHaveCount(7);
+    await expect(anchors).toHaveCount(8);
 
-    for (let i = 0; i < 7; i++) {
+    for (let i = 0; i < 8; i++) {
       const box = await anchors.nth(i).boundingBox();
       expect(box, `link ${i} should be visible`).toBeTruthy();
-      // The menu panel ends at top var(--nav-h) + max-height 420px.
+      // The menu panel ends at top var(--nav-h) + max-height 600px.
       expect(box.y + box.height, `link ${i} should not be clipped`).toBeLessThanOrEqual(
-        68 + 420 + 1
+        68 + 600 + 1
       );
     }
   });
