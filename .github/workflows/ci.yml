@@ -121,11 +121,10 @@ jobs:
           path: tests/e2e/visual.spec.js-snapshots/
           retention-days: 7
 
-  # Builds the dashboard data (reports/history.json + reports/latest/*) from the
-  # artifacts produced above and commits it back to main so GitHub Pages serves it.
-  # Only runs on pushes to main.
+  # Deploys the site to gh-pages (GitHub Pages source) and commits the dashboard
+  # report data back to the default branch. Only runs on pushes to the default branch.
   publish:
-    name: Build report + commit back
+    name: Deploy site + commit reports
     needs: [changes, unit, sast, e2e]
     if: github.event_name == 'push' && (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master') && !cancelled()
     runs-on: ubuntu-latest
@@ -149,9 +148,9 @@ jobs:
         if: needs.changes.outputs.code_changed == 'true'
         run: node scripts/build-report.mjs
 
-      # Commit the generated report data back to main. Skipped when only reports/
-      # changed (heavy jobs were skipped, nothing new was generated).
-      - name: Commit reports back to main
+      # Commit the generated report data back to the default branch. Skipped when
+      # only reports/ changed (heavy jobs were skipped, nothing new was generated).
+      - name: Commit reports back to default branch
         if: needs.changes.outputs.code_changed == 'true'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -164,4 +163,40 @@ jobs:
           else
             git commit -m "chore(reports): update quality lab data [skip ci]"
             git push origin HEAD:${GITHUB_REF_NAME}
+          fi
+
+      # Sync the site files from the default branch into gh-pages so GitHub Pages
+      # serves the latest content. Dev-only paths are excluded.
+      - name: Deploy site to gh-pages
+        if: needs.changes.outputs.code_changed == 'true'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -e
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          # Check out gh-pages, creating it from the default branch if missing.
+          if git ls-remote --exit-code --heads origin gh-pages >/dev/null 2>&1; then
+            git fetch origin gh-pages
+            git checkout -B gh-pages FETCH_HEAD
+          else
+            git checkout --orphan gh-pages
+          fi
+
+          # Remove everything, then copy the public site files over.
+          git rm -rf . >/dev/null 2>&1 || true
+          for f in index.html report.html suite.html \
+                   main.js report.js suite.js \
+                   style.css report.css \
+                   _headers CV.pdf og-image.png reports; do
+            if [ -e "$f" ]; then cp -r "$f" .; fi
+          done
+
+          git add -A
+          if git diff --cached --quiet; then
+            echo "gh-pages already up to date."
+          else
+            git commit -m "deploy: sync site from ${GITHUB_REF_NAME} @ ${GITHUB_SHA:0:7}"
+            git push origin gh-pages
           fi
