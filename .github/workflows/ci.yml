@@ -184,6 +184,8 @@ jobs:
           cd "$DEPLOY_DIR"
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
+          # This is a fresh repo, not the checkout — add origin explicitly.
+          git remote add origin https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
 
           # Copy the public site files from the default-branch checkout.
           SRC="$GITHUB_WORKSPACE"
