@@ -1,6 +1,6 @@
 {
-  "date": "2026-09-15T18:26:00.463Z",
-  "commit": "387dfa8",
+  "date": "2026-09-15T22:11:45.060Z",
+  "commit": "0cc8169",
   "branch": "master",
   "suites": {
     "unit": {
@@ -8,101 +8,101 @@
       "passed": 11,
       "failed": 0,
       "skipped": 0,
-      "durationMs": 29.7685546875,
+      "durationMs": 67.4853515625,
       "status": "pass",
       "tests": [
         {
           "name": "initNav adds .scrolled when scrollY > 10",
-          "file": "/home/dani/Workspace/landing-daniel/tests/unit/main.test.js",
+          "file": "/home/runner/work/danielmoreno.dev/danielmoreno.dev/tests/unit/main.test.js",
           "status": "passed",
-          "durationMs": 10.569810000000075,
+          "durationMs": 20.161871999999903,
           "message": ""
         },
         {
           "name": "initNav removes .scrolled when back at top",
-          "file": "/home/dani/Workspace/landing-daniel/tests/unit/main.test.js",
+          "file": "/home/runner/work/danielmoreno.dev/danielmoreno.dev/tests/unit/main.test.js",
           "status": "passed",
-          "durationMs": 2.414278999999965,
+          "durationMs": 6.687010999999984,
           "message": ""
         },
         {
           "name": "initNav does not add .scrolled at exactly 10px (threshold is > 10)",
-          "file": "/home/dani/Workspace/landing-daniel/tests/unit/main.test.js",
+          "file": "/home/runner/work/danielmoreno.dev/danielmoreno.dev/tests/unit/main.test.js",
           "status": "passed",
-          "durationMs": 2.559737000000041,
+          "durationMs": 6.272359999999935,
           "message": ""
         },
         {
           "name": "initNav toggles .open on the links when the hamburger is clicked",
-          "file": "/home/dani/Workspace/landing-daniel/tests/unit/main.test.js",
+          "file": "/home/runner/work/danielmoreno.dev/danielmoreno.dev/tests/unit/main.test.js",
           "status": "passed",
-          "durationMs": 2.4338290000000598,
+          "durationMs": 9.675059000000033,
           "message": ""
         },
         {
           "name": "initNav closes the menu when a nav link is clicked",
-          "file": "/home/dani/Workspace/landing-daniel/tests/unit/main.test.js",
+          "file": "/home/runner/work/danielmoreno.dev/danielmoreno.dev/tests/unit/main.test.js",
           "status": "passed",
-          "durationMs": 3.3947429999999486,
+          "durationMs": 7.655623999999989,
           "message": ""
         },
         {
           "name": "initReveal observes every .reveal element with the 0.12 threshold",
-          "file": "/home/dani/Workspace/landing-daniel/tests/unit/main.test.js",
+          "file": "/home/runner/work/danielmoreno.dev/danielmoreno.dev/tests/unit/main.test.js",
           "status": "passed",
-          "durationMs": 2.173520000000053,
+          "durationMs": 6.009010000000103,
           "message": ""
         },
         {
           "name": "initReveal assigns staggered transitionDelay of (i % 4) * 70ms",
-          "file": "/home/dani/Workspace/landing-daniel/tests/unit/main.test.js",
+          "file": "/home/runner/work/danielmoreno.dev/danielmoreno.dev/tests/unit/main.test.js",
           "status": "passed",
-          "durationMs": 1.379034000000047,
+          "durationMs": 2.749194999999986,
           "message": ""
         },
         {
           "name": "initReveal adds .visible when the element intersects and stops observing it",
-          "file": "/home/dani/Workspace/landing-daniel/tests/unit/main.test.js",
+          "file": "/home/runner/work/danielmoreno.dev/danielmoreno.dev/tests/unit/main.test.js",
           "status": "passed",
-          "durationMs": 1.1747440000000324,
+          "durationMs": 2.9590149999999085,
           "message": ""
         },
         {
           "name": "initReveal ignores non-intersecting entries",
-          "file": "/home/dani/Workspace/landing-daniel/tests/unit/main.test.js",
+          "file": "/home/runner/work/danielmoreno.dev/danielmoreno.dev/tests/unit/main.test.js",
           "status": "passed",
-          "durationMs": 1.1420249999999896,
+          "durationMs": 2.313633999999979,
           "message": ""
         },
         {
           "name": "setYear writes the current year into #year",
-          "file": "/home/dani/Workspace/landing-daniel/tests/unit/main.test.js",
+          "file": "/home/runner/work/danielmoreno.dev/danielmoreno.dev/tests/unit/main.test.js",
           "status": "passed",
-          "durationMs": 0.6541669999999158,
+          "durationMs": 1.264682999999991,
           "message": ""
         },
         {
           "name": "setYear is a no-op when #year is missing",
-          "file": "/home/dani/Workspace/landing-daniel/tests/unit/main.test.js",
+          "file": "/home/runner/work/danielmoreno.dev/danielmoreno.dev/tests/unit/main.test.js",
           "status": "passed",
-          "durationMs": 0.7686160000000655,
+          "durationMs": 1.4853939999999284,
           "message": ""
         }
       ],
       "detail": []
     },
     "e2e": {
-      "total": 100,
-      "passed": 100,
+      "total": 104,
+      "passed": 104,
       "failed": 0,
       "flaky": 0,
       "skipped": 0,
-      "durationMs": 136243,
+      "durationMs": 150867,
       "status": "pass",
       "projects": {
         "chromium": {
-          "total": 50,
-          "passed": 50,
+          "total": 54,
+          "passed": 54,
           "failed": 0
         },
         "firefox": {
@@ -117,7 +117,7 @@
           "file": "accessibility.spec.js",
           "project": "chromium",
           "status": "passed",
-          "durationMs": 1651,
+          "durationMs": 2409,
           "message": ""
         },
         {
@@ -125,7 +125,7 @@
           "file": "accessibility.spec.js",
           "project": "chromium",
           "status": "passed",
-          "durationMs": 1503,
+          "durationMs": 2090,
           "message": ""
         },
         {
@@ -133,7 +133,7 @@
           "file": "accessibility.spec.js",
           "project": "chromium",
           "status": "passed",
-          "durationMs": 1115,
+          "durationMs": 1519,
           "message": ""
         },
         {
@@ -141,7 +141,7 @@
           "file": "accessibility.spec.js",
           "project": "chromium",
           "status": "passed",
-          "durationMs": 1045,
+          "durationMs": 1493,
           "message": ""
         },
         {
@@ -149,7 +149,7 @@
           "file": "accessibility.spec.js",
           "project": "chromium",
           "status": "passed",
-          "durationMs": 1081,
+          "durationMs": 1535,
           "message": ""
         },
         {
@@ -157,7 +157,7 @@
           "file": "content.spec.js",
           "project": "chromium",
           "status": "passed",
-          "durationMs": 361,
+          "durationMs": 813,
           "message": ""
         },
         {
@@ -165,7 +165,7 @@
           "file": "content.spec.js",
           "project": "chromium",
           "status": "passed",
-          "durationMs": 260,
+          "durationMs": 698,
           "message": ""
         },
         {
@@ -173,7 +173,7 @@
           "file": "content.spec.js",
           "project": "chromium",
           "status": "passed",
-          "durationMs": 293,
+          "durationMs": 730,
           "message": ""
         },
         {
@@ -181,7 +181,7 @@
           "file": "content.spec.js",
           "project": "chromium",
           "status": "passed",
-          "durationMs": 255,
+          "durationMs": 684,
           "message": ""
         },
         {
@@ -189,7 +189,7 @@
           "file": "content.spec.js",
           "project": "chromium",
           "status": "passed",
-          "durationMs": 240,
+          "durationMs": 663,
           "message": ""
         },
         {
@@ -197,7 +197,7 @@
           "file": "content.spec.js",
           "project": "chromium",
           "status": "passed",
-          "durationMs": 753,
+          "durationMs": 1151,
           "message": ""
         },
         {
@@ -205,11 +205,19 @@
           "file": "content.spec.js",
           "project": "chromium",
           "status": "passed",
-          "durationMs": 248,
+          "durationMs": 719,
           "message": ""
         },
         {
-          "name": "serves over HTTP in CI (TLS handled by GitHub Pages in prod)",
+          "name": "_headers declares a strict CSP",
+          "file": "dast.spec.js",
+          "project": "chromium",
+          "status": "passed",
+          "durationMs": 5,
+          "message": ""
+        },
+        {
+          "name": "_headers declares clickjacking + nosniff + referrer protection",
           "file": "dast.spec.js",
           "project": "chromium",
           "status": "passed",
@@ -217,167 +225,55 @@
           "message": ""
         },
         {
+          "name": "served headers match _headers (local server mirrors prod)",
+          "file": "dast.spec.js",
+          "project": "chromium",
+          "status": "passed",
+          "durationMs": 19,
+          "message": ""
+        },
+        {
           "name": "X-Content-Type-Options: nosniff",
           "file": "dast.spec.js",
           "project": "chromium",
           "status": "passed",
-          "durationMs": 0,
+          "durationMs": 1,
           "message": ""
         },
         {
-          "name": "X-Frame-Options or CSP frame-ancestors (clickjacking)",
+          "name": "clickjacking protection (XFO or CSP frame-ancestors)",
           "file": "dast.spec.js",
           "project": "chromium",
           "status": "passed",
-          "durationMs": 0,
+          "durationMs": 1,
           "message": ""
         },
         {
-          "name": "Referrer-Policy set",
+          "name": "Referrer-Policy and Permissions-Policy set",
           "file": "dast.spec.js",
           "project": "chromium",
           "status": "passed",
-          "durationMs": 0,
+          "durationMs": 1,
           "message": ""
         },
         {
-          "name": "Permissions-Policy set",
+          "name": "JSON responses are not sniffsable as scripts (content-type + nosniff)",
           "file": "dast.spec.js",
           "project": "chromium",
           "status": "passed",
-          "durationMs": 0,
+          "durationMs": 5,
           "message": ""
         },
         {
-          "name": "Content-Security-Policy present",
+          "name": "CSP forbids unsafe-inline/unsafe-eval in script-src",
           "file": "dast.spec.js",
           "project": "chromium",
           "status": "passed",
-          "durationMs": 0,
+          "durationMs": 1,
           "message": ""
         },
         {
-          "name": "no cookies set without Secure flag (none expected on static site)",
-          "file": "dast.spec.js",
-          "project": "chromium",
-          "status": "passed",
-          "durationMs": 221,
-          "message": ""
-        },
-        {
-          "name": "no http:// (mixed content) references in HTML",
-          "file": "dast.spec.js",
-          "project": "chromium",
-          "status": "passed",
-          "durationMs": 251,
-          "message": ""
-        },
-        {
-          "name": "all external links use https",
-          "file": "dast.spec.js",
-          "project": "chromium",
-          "status": "passed",
-          "durationMs": 235,
-          "message": ""
-        },
-        {
-          "name": "no inline event handlers (onclick= etc.)",
-          "file": "dast.spec.js",
-          "project": "chromium",
-          "status": "passed",
-          "durationMs": 240,
-          "message": ""
-        },
-        {
-          "name": "no script execution from URL hash (reflected XSS surface)",
-          "file": "dast.spec.js",
-          "project": "chromium",
-          "status": "passed",
-          "durationMs": 719,
-          "message": ""
-        },
-        {
-          "name": "no script execution from query string",
-          "file": "dast.spec.js",
-          "project": "chromium",
-          "status": "passed",
-          "durationMs": 723,
-          "message": ""
-        },
-        {
-          "name": "no eval() or Function() constructor in main.js",
-          "file": "dast.spec.js",
-          "project": "chromium",
-          "status": "passed",
-          "durationMs": 4,
-          "message": ""
-        },
-        {
-          "name": "no document.write in main.js",
-          "file": "dast.spec.js",
-          "project": "chromium",
-          "status": "passed",
-          "durationMs": 3,
-          "message": ""
-        },
-        {
-          "name": "page cannot be framed (XFO or CSP)",
-          "file": "dast.spec.js",
-          "project": "chromium",
-          "status": "passed",
-          "durationMs": 1044,
-          "message": ""
-        },
-        {
-          "name": "no server version headers",
-          "file": "dast.spec.js",
-          "project": "chromium",
-          "status": "passed",
-          "durationMs": 3,
-          "message": ""
-        },
-        {
-          "name": "no X-Powered-By header",
-          "file": "dast.spec.js",
-          "project": "chromium",
-          "status": "passed",
-          "durationMs": 3,
-          "message": ""
-        },
-        {
-          "name": "404 page does not disclose framework details",
-          "file": "dast.spec.js",
-          "project": "chromium",
-          "status": "passed",
-          "durationMs": 3,
-          "message": ""
-        },
-        {
-          "name": "all target=_blank links have rel=noopener",
-          "file": "dast.spec.js",
-          "project": "chromium",
-          "status": "passed",
-          "durationMs": 238,
-          "message": ""
-        },
-        {
-          "name": "mailto and CV links are well-formed",
-          "file": "dast.spec.js",
-          "project": "chromium",
-          "status": "passed",
-          "durationMs": 233,
-          "message": ""
-        },
-        {
-          "name": "CSP script-src does not allow unsafe-inline or unsafe-eval",
-          "file": "dast.spec.js",
-          "project": "chromium",
-          "status": "passed",
-          "durationMs": 3,
-          "message": ""
-        },
-        {
-          "name": "CSP script-src restricts sources",
+          "name": "CSP has no wildcard sources",
           "file": "dast.spec.js",
           "project": "chromium",
           "status": "passed",
@@ -385,11 +281,147 @@
           "message": ""
         },
         {
+          "name": "HSTS present in production",
+          "file": "dast.spec.js",
+          "project": "chromium",
+          "status": "passed",
+          "durationMs": 0,
+          "message": ""
+        },
+        {
+          "name": "CSP is enforced at runtime (injected script + inline handler are blocked)",
+          "file": "dast.spec.js",
+          "project": "chromium",
+          "status": "passed",
+          "durationMs": 368,
+          "message": ""
+        },
+        {
+          "name": "page refuses to render inside a cross-origin iframe",
+          "file": "dast.spec.js",
+          "project": "chromium",
+          "status": "passed",
+          "durationMs": 2066,
+          "message": ""
+        },
+        {
+          "name": "no script execution from URL hash (all pages)",
+          "file": "dast.spec.js",
+          "project": "chromium",
+          "status": "passed",
+          "durationMs": 1888,
+          "message": ""
+        },
+        {
+          "name": "no script execution from query string (all pages)",
+          "file": "dast.spec.js",
+          "project": "chromium",
+          "status": "passed",
+          "durationMs": 1849,
+          "message": ""
+        },
+        {
+          "name": "Quality Lab JSON data cannot inject DOM (XSS via report payload)",
+          "file": "dast.spec.js",
+          "project": "chromium",
+          "status": "passed",
+          "durationMs": 1109,
+          "message": ""
+        },
+        {
+          "name": "no eval() or Function() constructor in shipped JS",
+          "file": "dast.spec.js",
+          "project": "chromium",
+          "status": "passed",
+          "durationMs": 7,
+          "message": ""
+        },
+        {
+          "name": "no document.write in shipped JS",
+          "file": "dast.spec.js",
+          "project": "chromium",
+          "status": "passed",
+          "durationMs": 6,
+          "message": ""
+        },
+        {
+          "name": "no inline event handlers (onclick= etc.)",
+          "file": "dast.spec.js",
+          "project": "chromium",
+          "status": "passed",
+          "durationMs": 437,
+          "message": ""
+        },
+        {
+          "name": "no plain-http resource references in HTML",
+          "file": "dast.spec.js",
+          "project": "chromium",
+          "status": "passed",
+          "durationMs": 337,
+          "message": ""
+        },
+        {
+          "name": "all external links use https",
+          "file": "dast.spec.js",
+          "project": "chromium",
+          "status": "passed",
+          "durationMs": 353,
+          "message": ""
+        },
+        {
+          "name": "remote scripts/styles are on an allowlisted origin",
+          "file": "dast.spec.js",
+          "project": "chromium",
+          "status": "passed",
+          "durationMs": 328,
+          "message": ""
+        },
+        {
+          "name": "all target=_blank links have rel=noopener",
+          "file": "dast.spec.js",
+          "project": "chromium",
+          "status": "passed",
+          "durationMs": 353,
+          "message": ""
+        },
+        {
+          "name": "mailto and CV links are well-formed",
+          "file": "dast.spec.js",
+          "project": "chromium",
+          "status": "passed",
+          "durationMs": 345,
+          "message": ""
+        },
+        {
+          "name": "no X-Powered-By header",
+          "file": "dast.spec.js",
+          "project": "chromium",
+          "status": "passed",
+          "durationMs": 4,
+          "message": ""
+        },
+        {
+          "name": "404 response does not disclose framework details",
+          "file": "dast.spec.js",
+          "project": "chromium",
+          "status": "passed",
+          "durationMs": 4,
+          "message": ""
+        },
+        {
+          "name": "local server rejects path traversal",
+          "file": "dast.spec.js",
+          "project": "chromium",
+          "status": "passed",
+          "durationMs": 4,
+          "message": ""
+        },
+        {
           "name": "every in-page anchor resolves to an existing element id",
           "file": "links.spec.js",
           "project": "chromium",
           "status": "passed",
-          "durationMs": 231,
+          "durationMs": 641,
           "message": ""
         },
         {
@@ -397,7 +429,7 @@
           "file": "links.spec.js",
           "project": "chromium",
           "status": "passed",
-          "durationMs": 232,
+          "durationMs": 623,
           "message": ""
         },
         {
@@ -405,7 +437,7 @@
           "file": "links.spec.js",
           "project": "chromium",
           "status": "passed",
-          "durationMs": 236,
+          "durationMs": 662,
           "message": ""
         },
         {
@@ -413,7 +445,7 @@
           "file": "links.spec.js",
           "project": "chromium",
           "status": "passed",
-          "durationMs": 242,
+          "durationMs": 645,
           "message": ""
         },
         {
@@ -421,7 +453,7 @@
           "file": "mobile-menu.spec.js",
           "project": "chromium",
           "status": "passed",
-          "durationMs": 231,
+          "durationMs": 628,
           "message": ""
         },
         {
@@ -429,15 +461,15 @@
           "file": "mobile-menu.spec.js",
           "project": "chromium",
           "status": "passed",
-          "durationMs": 368,
+          "durationMs": 780,
           "message": ""
         },
         {
-          "name": "all seven links are fully visible when the menu is open",
+          "name": "all eight links are fully visible when the menu is open",
           "file": "mobile-menu.spec.js",
           "project": "chromium",
           "status": "passed",
-          "durationMs": 341,
+          "durationMs": 854,
           "message": ""
         },
         {
@@ -445,7 +477,7 @@
           "file": "mobile-menu.spec.js",
           "project": "chromium",
           "status": "passed",
-          "durationMs": 1777,
+          "durationMs": 2188,
           "message": ""
         },
         {
@@ -453,7 +485,7 @@
           "file": "mobile-menu.spec.js",
           "project": "chromium",
           "status": "passed",
-          "durationMs": 251,
+          "durationMs": 635,
           "message": ""
         },
         {
@@ -461,7 +493,7 @@
           "file": "navigation.spec.js",
           "project": "chromium",
           "status": "passed",
-          "durationMs": 255,
+          "durationMs": 644,
           "message": ""
         },
         {
@@ -469,7 +501,7 @@
           "file": "navigation.spec.js",
           "project": "chromium",
           "status": "passed",
-          "durationMs": 858,
+          "durationMs": 1271,
           "message": ""
         },
         {
@@ -477,7 +509,7 @@
           "file": "navigation.spec.js",
           "project": "chromium",
           "status": "passed",
-          "durationMs": 2159,
+          "durationMs": 2507,
           "message": ""
         },
         {
@@ -485,7 +517,7 @@
           "file": "navigation.spec.js",
           "project": "chromium",
           "status": "passed",
-          "durationMs": 4351,
+          "durationMs": 780,
           "message": ""
         },
         {
@@ -493,7 +525,7 @@
           "file": "reveal.spec.js",
           "project": "chromium",
           "status": "passed",
-          "durationMs": 268,
+          "durationMs": 660,
           "message": ""
         },
         {
@@ -501,7 +533,7 @@
           "file": "reveal.spec.js",
           "project": "chromium",
           "status": "passed",
-          "durationMs": 3821,
+          "durationMs": 4313,
           "message": ""
         },
         {
@@ -509,7 +541,7 @@
           "file": "reveal.spec.js",
           "project": "chromium",
           "status": "passed",
-          "durationMs": 3538,
+          "durationMs": 3941,
           "message": ""
         },
         {
@@ -921,7 +953,7 @@
       "failed": 0,
       "skipped": 0,
       "flaky": 0,
-      "durationMs": 34061,
+      "durationMs": 37717,
       "status": "pass",
       "projects": {
         "chromium": {
@@ -941,7 +973,7 @@
           "file": "visual.spec.js",
           "project": "chromium",
           "status": "passed",
-          "durationMs": 2977,
+          "durationMs": 3676,
           "message": ""
         },
         {
@@ -949,7 +981,7 @@
           "file": "visual.spec.js",
           "project": "chromium",
           "status": "passed",
-          "durationMs": 2476,
+          "durationMs": 2920,
           "message": ""
         },
         {
@@ -957,7 +989,7 @@
           "file": "visual.spec.js",
           "project": "chromium",
           "status": "passed",
-          "durationMs": 2488,
+          "durationMs": 2906,
           "message": ""
         },
         {
@@ -965,7 +997,7 @@
           "file": "visual.spec.js",
           "project": "chromium",
           "status": "passed",
-          "durationMs": 2524,
+          "durationMs": 3062,
           "message": ""
         },
         {
@@ -973,7 +1005,7 @@
           "file": "visual.spec.js",
           "project": "chromium",
           "status": "passed",
-          "durationMs": 2476,
+          "durationMs": 2901,
           "message": ""
         },
         {
@@ -981,7 +1013,7 @@
           "file": "visual.spec.js",
           "project": "chromium",
           "status": "passed",
-          "durationMs": 2480,
+          "durationMs": 2909,
           "message": ""
         },
         {
@@ -989,7 +1021,7 @@
           "file": "visual.spec.js",
           "project": "chromium",
           "status": "passed",
-          "durationMs": 2427,
+          "durationMs": 2830,
           "message": ""
         },
         {
@@ -997,7 +1029,7 @@
           "file": "visual.spec.js",
           "project": "chromium",
           "status": "passed",
-          "durationMs": 2445,
+          "durationMs": 2864,
           "message": ""
         },
         {
@@ -1005,7 +1037,7 @@
           "file": "visual.spec.js",
           "project": "chromium",
           "status": "passed",
-          "durationMs": 5410,
+          "durationMs": 6497,
           "message": ""
         },
         {
@@ -1013,7 +1045,7 @@
           "file": "visual.spec.js",
           "project": "chromium",
           "status": "passed",
-          "durationMs": 3772,
+          "durationMs": 4308,
           "message": ""
         },
         {
@@ -1021,7 +1053,7 @@
           "file": "visual.spec.js",
           "project": "chromium",
           "status": "passed",
-          "durationMs": 3867,
+          "durationMs": 4378,
           "message": ""
         },
         {
@@ -1029,7 +1061,7 @@
           "file": "visual.spec.js",
           "project": "chromium",
           "status": "passed",
-          "durationMs": 4008,
+          "durationMs": 4638,
           "message": ""
         },
         {
@@ -1037,7 +1069,7 @@
           "file": "visual.spec.js",
           "project": "chromium",
           "status": "passed",
-          "durationMs": 3807,
+          "durationMs": 4324,
           "message": ""
         },
         {
@@ -1045,7 +1077,7 @@
           "file": "visual.spec.js",
           "project": "chromium",
           "status": "passed",
-          "durationMs": 3859,
+          "durationMs": 4362,
           "message": ""
         },
         {
@@ -1053,7 +1085,7 @@
           "file": "visual.spec.js",
           "project": "chromium",
           "status": "passed",
-          "durationMs": 3694,
+          "durationMs": 4126,
           "message": ""
         },
         {
@@ -1061,7 +1093,7 @@
           "file": "visual.spec.js",
           "project": "chromium",
           "status": "passed",
-          "durationMs": 3129,
+          "durationMs": 3541,
           "message": ""
         },
         {

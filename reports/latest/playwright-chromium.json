@@ -1,16 +1,16 @@
 {
   "config": {
     "argv": [
-      "/usr/bin/node-22",
-      "/home/dani/Workspace/landing-daniel/node_modules/.bin/playwright",
+      "/opt/hostedtoolcache/node/20.20.2/x64/bin/node",
+      "/home/runner/work/danielmoreno.dev/danielmoreno.dev/node_modules/.bin/playwright",
       "test",
       "--project=chromium",
       "--reporter=json"
     ],
-    "configFile": "/home/dani/Workspace/landing-daniel/playwright.config.js",
-    "rootDir": "/home/dani/Workspace/landing-daniel/tests/e2e",
+    "configFile": "/home/runner/work/danielmoreno.dev/danielmoreno.dev/playwright.config.js",
+    "rootDir": "/home/runner/work/danielmoreno.dev/danielmoreno.dev/tests/e2e",
     "failOnFlakyTests": false,
-    "forbidOnly": false,
+    "forbidOnly": true,
     "fullyParallel": false,
     "globalSetup": null,
     "globalTeardown": null,
@@ -19,20 +19,64 @@
     "grepInvert": null,
     "maxFailures": 0,
     "metadata": {
+      "ci": {
+        "commitHref": "https://github.com/danimroca/danielmoreno.dev/commit/0cc8169a5da156ea0ef81976d65a755e0029ab71",
+        "commitHash": "0cc8169a5da156ea0ef81976d65a755e0029ab71",
+        "buildHref": "https://github.com/danimroca/danielmoreno.dev/actions/runs/35029496307"
+      },
+      "gitCommit": {
+        "shortHash": "0cc8169",
+        "hash": "0cc8169a5da156ea0ef81976d65a755e0029ab71",
+        "subject": "ci: grant publish job contents:write (GITHUB_TOKEN 403 on push)",
+        "body": "ci: grant publish job contents:write (GITHUB_TOKEN 403 on push)\n",
+        "author": {
+          "name": "Dani",
+          "email": "danim.roca@gmail.com",
+          "time": 1789510161000
+        },
+        "committer": {
+          "name": "Dani",
+          "email": "danim.roca@gmail.com",
+          "time": 1789510161000
+        },
+        "branch": "master"
+      },
       "actualWorkers": 2
     },
     "preserveOutput": "always",
     "projects": [
       {
-        "outputDir": "/home/dani/Workspace/landing-daniel/test-results",
+        "outputDir": "/home/runner/work/danielmoreno.dev/danielmoreno.dev/test-results",
         "repeatEach": 1,
-        "retries": 0,
+        "retries": 1,
         "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/danimroca/danielmoreno.dev/commit/0cc8169a5da156ea0ef81976d65a755e0029ab71",
+            "commitHash": "0cc8169a5da156ea0ef81976d65a755e0029ab71",
+            "buildHref": "https://github.com/danimroca/danielmoreno.dev/actions/runs/35029496307"
+          },
+          "gitCommit": {
+            "shortHash": "0cc8169",
+            "hash": "0cc8169a5da156ea0ef81976d65a755e0029ab71",
+            "subject": "ci: grant publish job contents:write (GITHUB_TOKEN 403 on push)",
+            "body": "ci: grant publish job contents:write (GITHUB_TOKEN 403 on push)\n",
+            "author": {
+              "name": "Dani",
+              "email": "danim.roca@gmail.com",
+              "time": 1789510161000
+            },
+            "committer": {
+              "name": "Dani",
+              "email": "danim.roca@gmail.com",
+              "time": 1789510161000
+            },
+            "branch": "master"
+          },
           "actualWorkers": 2
         },
         "id": "chromium",
         "name": "chromium",
-        "testDir": "/home/dani/Workspace/landing-daniel/tests/e2e",
+        "testDir": "/home/runner/work/danielmoreno.dev/danielmoreno.dev/tests/e2e",
         "testIgnore": [],
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
@@ -40,15 +84,37 @@
         "timeout": 30000
       },
       {
-        "outputDir": "/home/dani/Workspace/landing-daniel/test-results",
+        "outputDir": "/home/runner/work/danielmoreno.dev/danielmoreno.dev/test-results",
         "repeatEach": 1,
-        "retries": 0,
+        "retries": 1,
         "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/danimroca/danielmoreno.dev/commit/0cc8169a5da156ea0ef81976d65a755e0029ab71",
+            "commitHash": "0cc8169a5da156ea0ef81976d65a755e0029ab71",
+            "buildHref": "https://github.com/danimroca/danielmoreno.dev/actions/runs/35029496307"
+          },
+          "gitCommit": {
+            "shortHash": "0cc8169",
+            "hash": "0cc8169a5da156ea0ef81976d65a755e0029ab71",
+            "subject": "ci: grant publish job contents:write (GITHUB_TOKEN 403 on push)",
+            "body": "ci: grant publish job contents:write (GITHUB_TOKEN 403 on push)\n",
+            "author": {
+              "name": "Dani",
+              "email": "danim.roca@gmail.com",
+              "time": 1789510161000
+            },
+            "committer": {
+              "name": "Dani",
+              "email": "danim.roca@gmail.com",
+              "time": 1789510161000
+            },
+            "branch": "master"
+          },
           "actualWorkers": 2
         },
         "id": "firefox",
         "name": "firefox",
-        "testDir": "/home/dani/Workspace/landing-daniel/tests/e2e",
+        "testDir": "/home/runner/work/danielmoreno.dev/danielmoreno.dev/tests/e2e",
         "testIgnore": [],
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
@@ -56,15 +122,37 @@
         "timeout": 30000
       },
       {
-        "outputDir": "/home/dani/Workspace/landing-daniel/test-results",
+        "outputDir": "/home/runner/work/danielmoreno.dev/danielmoreno.dev/test-results",
         "repeatEach": 1,
-        "retries": 0,
+        "retries": 1,
         "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/danimroca/danielmoreno.dev/commit/0cc8169a5da156ea0ef81976d65a755e0029ab71",
+            "commitHash": "0cc8169a5da156ea0ef81976d65a755e0029ab71",
+            "buildHref": "https://github.com/danimroca/danielmoreno.dev/actions/runs/35029496307"
+          },
+          "gitCommit": {
+            "shortHash": "0cc8169",
+            "hash": "0cc8169a5da156ea0ef81976d65a755e0029ab71",
+            "subject": "ci: grant publish job contents:write (GITHUB_TOKEN 403 on push)",
+            "body": "ci: grant publish job contents:write (GITHUB_TOKEN 403 on push)\n",
+            "author": {
+              "name": "Dani",
+              "email": "danim.roca@gmail.com",
+              "time": 1789510161000
+            },
+            "committer": {
+              "name": "Dani",
+              "email": "danim.roca@gmail.com",
+              "time": 1789510161000
+            },
+            "branch": "master"
+          },
           "actualWorkers": 2
         },
         "id": "webkit",
         "name": "webkit",
-        "testDir": "/home/dani/Workspace/landing-daniel/tests/e2e",
+        "testDir": "/home/runner/work/danielmoreno.dev/danielmoreno.dev/tests/e2e",
         "testIgnore": [],
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
@@ -91,7 +179,7 @@
     "webServer": {
       "command": "node tests/server.mjs",
       "url": "http://localhost:3000",
-      "reuseExistingServer": true
+      "reuseExistingServer": false
     }
   },
   "suites": [
@@ -124,12 +212,12 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1651,
+                      "duration": 2409,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-09-15T17:59:17.409Z",
+                      "startTime": "2026-09-15T22:10:09.306Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -158,12 +246,12 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1503,
+                      "duration": 2090,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-09-15T17:59:19.127Z",
+                      "startTime": "2026-09-15T22:10:11.882Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -192,12 +280,12 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1115,
+                      "duration": 1519,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-09-15T17:59:20.639Z",
+                      "startTime": "2026-09-15T22:10:13.986Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -226,12 +314,12 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1045,
+                      "duration": 1493,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-09-15T17:59:21.762Z",
+                      "startTime": "2026-09-15T22:10:15.520Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -260,12 +348,12 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1081,
+                      "duration": 1535,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-09-15T17:59:22.815Z",
+                      "startTime": "2026-09-15T22:10:17.024Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -311,12 +399,12 @@
                       "workerIndex": 1,
                       "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 361,
+                      "duration": 813,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-09-15T17:59:17.397Z",
+                      "startTime": "2026-09-15T22:10:09.146Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -345,12 +433,12 @@
                       "workerIndex": 1,
                       "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 260,
+                      "duration": 698,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-09-15T17:59:17.837Z",
+                      "startTime": "2026-09-15T22:10:10.303Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -379,12 +467,12 @@
                       "workerIndex": 1,
                       "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 293,
+                      "duration": 730,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-09-15T17:59:18.104Z",
+                      "startTime": "2026-09-15T22:10:11.020Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -413,12 +501,12 @@
                       "workerIndex": 1,
                       "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 255,
+                      "duration": 684,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-09-15T17:59:18.406Z",
+                      "startTime": "2026-09-15T22:10:11.773Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -447,12 +535,12 @@
                       "workerIndex": 1,
                       "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 240,
+                      "duration": 663,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-09-15T17:59:18.667Z",
+                      "startTime": "2026-09-15T22:10:12.474Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -481,12 +569,12 @@
                       "workerIndex": 1,
                       "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 753,
+                      "duration": 1151,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-09-15T17:59:18.915Z",
+                      "startTime": "2026-09-15T22:10:13.153Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -515,12 +603,12 @@
                       "workerIndex": 1,
                       "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 248,
+                      "duration": 719,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-09-15T17:59:19.675Z",
+                      "startTime": "2026-09-15T22:10:14.317Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -545,13 +633,47 @@
       "specs": [],
       "suites": [
         {
-          "title": "DAST: security headers",
+          "title": "DAST: _headers (GitHub Pages config)",
           "file": "dast.spec.js",
-          "line": 11,
+          "line": 81,
           "column": 6,
           "specs": [
             {
-              "title": "serves over HTTP in CI (TLS handled by GitHub Pages in prod)",
+              "title": "_headers declares a strict CSP",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 5,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-15T22:10:15.083Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b5042ce8e80f8656333b-328335557a420b971748",
+              "file": "dast.spec.js",
+              "line": 84,
+              "column": 3
+            },
+            {
+              "title": "_headers declares clickjacking + nosniff + referrer protection",
               "ok": true,
               "tags": [],
               "tests": [
@@ -571,7 +693,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-09-15T17:59:19.936Z",
+                      "startTime": "2026-09-15T22:10:15.095Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -579,11 +701,53 @@
                   "status": "expected"
                 }
               ],
-              "id": "b5042ce8e80f8656333b-5a2ca0da3ecfe3a30f38",
+              "id": "b5042ce8e80f8656333b-0f45783074ea4780eb8e",
               "file": "dast.spec.js",
-              "line": 19,
+              "line": 98,
               "column": 3
             },
+            {
+              "title": "served headers match _headers (local server mirrors prod)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 19,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-15T22:10:15.103Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b5042ce8e80f8656333b-ab20798d4dfa8ca0c1b7",
+              "file": "dast.spec.js",
+              "line": 109,
+              "column": 3
+            }
+          ]
+        },
+        {
+          "title": "DAST: served security headers",
+          "file": "dast.spec.js",
+          "line": 120,
+          "column": 6,
+          "specs": [
             {
               "title": "X-Content-Type-Options: nosniff",
               "ok": true,
@@ -600,12 +764,12 @@
                       "workerIndex": 1,
                       "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 0,
+                      "duration": 1,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-09-15T17:59:19.962Z",
+                      "startTime": "2026-09-15T22:10:15.130Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -613,13 +777,13 @@
                   "status": "expected"
                 }
               ],
-              "id": "b5042ce8e80f8656333b-e60589b53fbd03f3060d",
+              "id": "b5042ce8e80f8656333b-7cd8d7e00f8ccc6696d9",
               "file": "dast.spec.js",
-              "line": 25,
+              "line": 134,
               "column": 3
             },
             {
-              "title": "X-Frame-Options or CSP frame-ancestors (clickjacking)",
+              "title": "clickjacking protection (XFO or CSP frame-ancestors)",
               "ok": true,
               "tags": [],
               "tests": [
@@ -634,12 +798,12 @@
                       "workerIndex": 1,
                       "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 0,
+                      "duration": 1,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-09-15T17:59:19.967Z",
+                      "startTime": "2026-09-15T22:10:15.153Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -647,13 +811,13 @@
                   "status": "expected"
                 }
               ],
-              "id": "b5042ce8e80f8656333b-c29fc8c3607535b6e15e",
+              "id": "b5042ce8e80f8656333b-e4fc257ff728f9f3cbc3",
               "file": "dast.spec.js",
-              "line": 29,
+              "line": 140,
               "column": 3
             },
             {
-              "title": "Referrer-Policy set",
+              "title": "Referrer-Policy and Permissions-Policy set",
               "ok": true,
               "tags": [],
               "tests": [
@@ -668,12 +832,12 @@
                       "workerIndex": 1,
                       "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 0,
+                      "duration": 1,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-09-15T17:59:19.972Z",
+                      "startTime": "2026-09-15T22:10:15.161Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -681,13 +845,13 @@
                   "status": "expected"
                 }
               ],
-              "id": "b5042ce8e80f8656333b-0cc977a74d4ac0f48bc2",
+              "id": "b5042ce8e80f8656333b-568a2a9b429f2a5c445a",
               "file": "dast.spec.js",
-              "line": 38,
+              "line": 150,
               "column": 3
             },
             {
-              "title": "Permissions-Policy set",
+              "title": "JSON responses are not sniffsable as scripts (content-type + nosniff)",
               "ok": true,
               "tags": [],
               "tests": [
@@ -702,12 +866,12 @@
                       "workerIndex": 1,
                       "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 0,
+                      "duration": 5,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-09-15T17:59:19.976Z",
+                      "startTime": "2026-09-15T22:10:15.168Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -715,13 +879,13 @@
                   "status": "expected"
                 }
               ],
-              "id": "b5042ce8e80f8656333b-92b6e41499980034191c",
+              "id": "b5042ce8e80f8656333b-2db69af4a67af33b30c4",
               "file": "dast.spec.js",
-              "line": 42,
+              "line": 156,
               "column": 3
             },
             {
-              "title": "Content-Security-Policy present",
+              "title": "CSP forbids unsafe-inline/unsafe-eval in script-src",
               "ok": true,
               "tags": [],
               "tests": [
@@ -736,12 +900,12 @@
                       "workerIndex": 1,
                       "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 0,
+                      "duration": 1,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-09-15T17:59:19.982Z",
+                      "startTime": "2026-09-15T22:10:15.178Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -749,579 +913,13 @@
                   "status": "expected"
                 }
               ],
-              "id": "b5042ce8e80f8656333b-77f85fe80be692345062",
+              "id": "b5042ce8e80f8656333b-f36644be405b44c0c9ef",
               "file": "dast.spec.js",
-              "line": 46,
-              "column": 3
-            }
-          ]
-        },
-        {
-          "title": "DAST: cookies",
-          "file": "dast.spec.js",
-          "line": 51,
-          "column": 6,
-          "specs": [
-            {
-              "title": "no cookies set without Secure flag (none expected on static site)",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 1,
-                      "parallelIndex": 1,
-                      "status": "passed",
-                      "duration": 221,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-09-15T17:59:19.986Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "b5042ce8e80f8656333b-7fa96662dd0942749760",
-              "file": "dast.spec.js",
-              "line": 52,
-              "column": 3
-            }
-          ]
-        },
-        {
-          "title": "DAST: mixed content & external resources",
-          "file": "dast.spec.js",
-          "line": 62,
-          "column": 6,
-          "specs": [
-            {
-              "title": "no http:// (mixed content) references in HTML",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 1,
-                      "parallelIndex": 1,
-                      "status": "passed",
-                      "duration": 251,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-09-15T17:59:20.212Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "b5042ce8e80f8656333b-ca69711e36df453c821b",
-              "file": "dast.spec.js",
-              "line": 63,
+              "line": 163,
               "column": 3
             },
             {
-              "title": "all external links use https",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 1,
-                      "parallelIndex": 1,
-                      "status": "passed",
-                      "duration": 235,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-09-15T17:59:20.468Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "b5042ce8e80f8656333b-654504f8f0b499f96082",
-              "file": "dast.spec.js",
-              "line": 71,
-              "column": 3
-            },
-            {
-              "title": "no inline event handlers (onclick= etc.)",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 1,
-                      "parallelIndex": 1,
-                      "status": "passed",
-                      "duration": 240,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-09-15T17:59:20.707Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "b5042ce8e80f8656333b-445d6e23b114d68f133b",
-              "file": "dast.spec.js",
-              "line": 80,
-              "column": 3
-            }
-          ]
-        },
-        {
-          "title": "DAST: XSS probes",
-          "file": "dast.spec.js",
-          "line": 90,
-          "column": 6,
-          "specs": [
-            {
-              "title": "no script execution from URL hash (reflected XSS surface)",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 1,
-                      "parallelIndex": 1,
-                      "status": "passed",
-                      "duration": 719,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-09-15T17:59:20.952Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "b5042ce8e80f8656333b-f71883d54bbc244a039f",
-              "file": "dast.spec.js",
-              "line": 91,
-              "column": 3
-            },
-            {
-              "title": "no script execution from query string",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 1,
-                      "parallelIndex": 1,
-                      "status": "passed",
-                      "duration": 723,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-09-15T17:59:21.676Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "b5042ce8e80f8656333b-a55bc8a6d9901c16b63c",
-              "file": "dast.spec.js",
-              "line": 99,
-              "column": 3
-            },
-            {
-              "title": "no eval() or Function() constructor in main.js",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 1,
-                      "parallelIndex": 1,
-                      "status": "passed",
-                      "duration": 4,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-09-15T17:59:22.404Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "b5042ce8e80f8656333b-8a191e151ac2169455e3",
-              "file": "dast.spec.js",
-              "line": 107,
-              "column": 3
-            },
-            {
-              "title": "no document.write in main.js",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 1,
-                      "parallelIndex": 1,
-                      "status": "passed",
-                      "duration": 3,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-09-15T17:59:22.413Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "b5042ce8e80f8656333b-fe9f67b0219da3f658b6",
-              "file": "dast.spec.js",
-              "line": 115,
-              "column": 3
-            }
-          ]
-        },
-        {
-          "title": "DAST: clickjacking & framing",
-          "file": "dast.spec.js",
-          "line": 122,
-          "column": 6,
-          "specs": [
-            {
-              "title": "page cannot be framed (XFO or CSP)",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 1,
-                      "parallelIndex": 1,
-                      "status": "passed",
-                      "duration": 1044,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-09-15T17:59:22.421Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "b5042ce8e80f8656333b-91eae1d735cf00c57fa5",
-              "file": "dast.spec.js",
-              "line": 123,
-              "column": 3
-            }
-          ]
-        },
-        {
-          "title": "DAST: information disclosure",
-          "file": "dast.spec.js",
-          "line": 146,
-          "column": 6,
-          "specs": [
-            {
-              "title": "no server version headers",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 1,
-                      "parallelIndex": 1,
-                      "status": "passed",
-                      "duration": 3,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-09-15T17:59:23.469Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "b5042ce8e80f8656333b-738f1683c7bcb224afad",
-              "file": "dast.spec.js",
-              "line": 147,
-              "column": 3
-            },
-            {
-              "title": "no X-Powered-By header",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 1,
-                      "parallelIndex": 1,
-                      "status": "passed",
-                      "duration": 3,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-09-15T17:59:23.476Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "b5042ce8e80f8656333b-eb357a8cd09d858ec2a8",
-              "file": "dast.spec.js",
-              "line": 153,
-              "column": 3
-            },
-            {
-              "title": "404 page does not disclose framework details",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 1,
-                      "parallelIndex": 1,
-                      "status": "passed",
-                      "duration": 3,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-09-15T17:59:23.485Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "b5042ce8e80f8656333b-2ca828fc16bdff73c824",
-              "file": "dast.spec.js",
-              "line": 158,
-              "column": 3
-            }
-          ]
-        },
-        {
-          "title": "DAST: link hygiene",
-          "file": "dast.spec.js",
-          "line": 165,
-          "column": 6,
-          "specs": [
-            {
-              "title": "all target=_blank links have rel=noopener",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 1,
-                      "parallelIndex": 1,
-                      "status": "passed",
-                      "duration": 238,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-09-15T17:59:23.492Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "b5042ce8e80f8656333b-1f55a5cde24cb25431d6",
-              "file": "dast.spec.js",
-              "line": 166,
-              "column": 3
-            },
-            {
-              "title": "mailto and CV links are well-formed",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 1,
-                      "parallelIndex": 1,
-                      "status": "passed",
-                      "duration": 233,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-09-15T17:59:23.735Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "b5042ce8e80f8656333b-7d2e5ea525919b2df8e5",
-              "file": "dast.spec.js",
-              "line": 174,
-              "column": 3
-            }
-          ]
-        },
-        {
-          "title": "DAST: CSP effectiveness",
-          "file": "dast.spec.js",
-          "line": 188,
-          "column": 6,
-          "specs": [
-            {
-              "title": "CSP script-src does not allow unsafe-inline or unsafe-eval",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 1,
-                      "parallelIndex": 1,
-                      "status": "passed",
-                      "duration": 3,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-09-15T17:59:23.973Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "b5042ce8e80f8656333b-49cd0279852cb15881e9",
-              "file": "dast.spec.js",
-              "line": 189,
-              "column": 3
-            },
-            {
-              "title": "CSP script-src restricts sources",
+              "title": "CSP has no wildcard sources",
               "ok": true,
               "tags": [],
               "tests": [
@@ -1341,7 +939,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-09-15T17:59:23.981Z",
+                      "startTime": "2026-09-15T22:10:15.184Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1349,9 +947,627 @@
                   "status": "expected"
                 }
               ],
-              "id": "b5042ce8e80f8656333b-19bdd45f5784e6e7ad91",
+              "id": "b5042ce8e80f8656333b-190fcd9182a002f3189f",
               "file": "dast.spec.js",
-              "line": 197,
+              "line": 172,
+              "column": 3
+            },
+            {
+              "title": "HSTS present in production",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 0,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-15T22:10:15.192Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b5042ce8e80f8656333b-3d6ba748ab4708e3b5c3",
+              "file": "dast.spec.js",
+              "line": 180,
+              "column": 3
+            },
+            {
+              "title": "CSP is enforced at runtime (injected script + inline handler are blocked)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 368,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-15T22:10:15.198Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b5042ce8e80f8656333b-43c67e217b7e76bfc77d",
+              "file": "dast.spec.js",
+              "line": 187,
+              "column": 3
+            }
+          ]
+        },
+        {
+          "title": "DAST: clickjacking (framing)",
+          "file": "dast.spec.js",
+          "line": 211,
+          "column": 6,
+          "specs": [
+            {
+              "title": "page refuses to render inside a cross-origin iframe",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 2066,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-15T22:10:15.580Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b5042ce8e80f8656333b-7b4bb8536bd9c9de2223",
+              "file": "dast.spec.js",
+              "line": 212,
+              "column": 3
+            }
+          ]
+        },
+        {
+          "title": "DAST: XSS probes",
+          "file": "dast.spec.js",
+          "line": 240,
+          "column": 6,
+          "specs": [
+            {
+              "title": "no script execution from URL hash (all pages)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 1888,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-15T22:10:17.661Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b5042ce8e80f8656333b-cbf7d786c24acb8356f7",
+              "file": "dast.spec.js",
+              "line": 247,
+              "column": 3
+            },
+            {
+              "title": "no script execution from query string (all pages)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 1849,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-15T22:10:19.578Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b5042ce8e80f8656333b-36905f11a76dc08a1395",
+              "file": "dast.spec.js",
+              "line": 259,
+              "column": 3
+            },
+            {
+              "title": "Quality Lab JSON data cannot inject DOM (XSS via report payload)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 1109,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-15T22:10:21.436Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b5042ce8e80f8656333b-c8ed492b09871dca5596",
+              "file": "dast.spec.js",
+              "line": 272,
+              "column": 3
+            },
+            {
+              "title": "no eval() or Function() constructor in shipped JS",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 7,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-15T22:10:22.555Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b5042ce8e80f8656333b-8377c4cca2a61030566b",
+              "file": "dast.spec.js",
+              "line": 314,
+              "column": 3
+            },
+            {
+              "title": "no document.write in shipped JS",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 6,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-15T22:10:22.570Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b5042ce8e80f8656333b-2fe04b8ad54a7414b43a",
+              "file": "dast.spec.js",
+              "line": 323,
+              "column": 3
+            }
+          ]
+        },
+        {
+          "title": "DAST: DOM hygiene",
+          "file": "dast.spec.js",
+          "line": 333,
+          "column": 6,
+          "specs": [
+            {
+              "title": "no inline event handlers (onclick= etc.)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 437,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-15T22:10:22.584Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b5042ce8e80f8656333b-6e78db6ce46acf3cb66d",
+              "file": "dast.spec.js",
+              "line": 340,
+              "column": 3
+            },
+            {
+              "title": "no plain-http resource references in HTML",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 337,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-15T22:10:23.042Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b5042ce8e80f8656333b-96891fd4cca2902dfa76",
+              "file": "dast.spec.js",
+              "line": 351,
+              "column": 3
+            },
+            {
+              "title": "all external links use https",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 353,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-15T22:10:23.387Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b5042ce8e80f8656333b-ac8c597c79d1eb2b6103",
+              "file": "dast.spec.js",
+              "line": 358,
+              "column": 3
+            },
+            {
+              "title": "remote scripts/styles are on an allowlisted origin",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 328,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-15T22:10:23.754Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b5042ce8e80f8656333b-a79bcfcbbf61c08273b5",
+              "file": "dast.spec.js",
+              "line": 365,
+              "column": 3
+            }
+          ]
+        },
+        {
+          "title": "DAST: link hygiene",
+          "file": "dast.spec.js",
+          "line": 379,
+          "column": 6,
+          "specs": [
+            {
+              "title": "all target=_blank links have rel=noopener",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 353,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-15T22:10:24.091Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b5042ce8e80f8656333b-1f55a5cde24cb25431d6",
+              "file": "dast.spec.js",
+              "line": 380,
+              "column": 3
+            },
+            {
+              "title": "mailto and CV links are well-formed",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 345,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-15T22:10:24.455Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b5042ce8e80f8656333b-7d2e5ea525919b2df8e5",
+              "file": "dast.spec.js",
+              "line": 388,
+              "column": 3
+            }
+          ]
+        },
+        {
+          "title": "DAST: information disclosure",
+          "file": "dast.spec.js",
+          "line": 401,
+          "column": 6,
+          "specs": [
+            {
+              "title": "no X-Powered-By header",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 4,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-15T22:10:24.809Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b5042ce8e80f8656333b-eb357a8cd09d858ec2a8",
+              "file": "dast.spec.js",
+              "line": 402,
+              "column": 3
+            },
+            {
+              "title": "404 response does not disclose framework details",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 4,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-15T22:10:24.820Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b5042ce8e80f8656333b-6d2017565c71d9d0042d",
+              "file": "dast.spec.js",
+              "line": 407,
+              "column": 3
+            },
+            {
+              "title": "local server rejects path traversal",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 4,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-15T22:10:24.831Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b5042ce8e80f8656333b-b048c14a3790d778265b",
+              "file": "dast.spec.js",
+              "line": 414,
               "column": 3
             }
           ]
@@ -1387,12 +1603,12 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 231,
+                      "duration": 641,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-09-15T17:59:23.905Z",
+                      "startTime": "2026-09-15T22:10:18.584Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1421,12 +1637,12 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 232,
+                      "duration": 623,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-09-15T17:59:24.143Z",
+                      "startTime": "2026-09-15T22:10:19.233Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1455,12 +1671,12 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 236,
+                      "duration": 662,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-09-15T17:59:24.382Z",
+                      "startTime": "2026-09-15T22:10:19.864Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1489,12 +1705,12 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 242,
+                      "duration": 645,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-09-15T17:59:24.624Z",
+                      "startTime": "2026-09-15T22:10:20.537Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1537,15 +1753,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 1,
-                      "parallelIndex": 1,
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 231,
+                      "duration": 628,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-09-15T17:59:23.990Z",
+                      "startTime": "2026-09-15T22:10:21.201Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1571,15 +1787,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 1,
-                      "parallelIndex": 1,
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 368,
+                      "duration": 780,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-09-15T17:59:24.226Z",
+                      "startTime": "2026-09-15T22:10:21.839Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1593,7 +1809,7 @@
               "column": 3
             },
             {
-              "title": "all seven links are fully visible when the menu is open",
+              "title": "all eight links are fully visible when the menu is open",
               "ok": true,
               "tags": [],
               "tests": [
@@ -1605,15 +1821,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 1,
-                      "parallelIndex": 1,
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 341,
+                      "duration": 854,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-09-15T17:59:24.600Z",
+                      "startTime": "2026-09-15T22:10:22.631Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1621,7 +1837,7 @@
                   "status": "expected"
                 }
               ],
-              "id": "823a5059145590f9afba-9a4d769cfa30788bb824",
+              "id": "823a5059145590f9afba-53588f0ac7615e2c9557",
               "file": "mobile-menu.spec.js",
               "line": 26,
               "column": 3
@@ -1639,15 +1855,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 1,
-                      "parallelIndex": 1,
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1777,
+                      "duration": 2188,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-09-15T17:59:24.948Z",
+                      "startTime": "2026-09-15T22:10:23.499Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1673,15 +1889,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 1,
-                      "parallelIndex": 1,
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 251,
+                      "duration": 635,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-09-15T17:59:26.732Z",
+                      "startTime": "2026-09-15T22:10:25.699Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1724,15 +1940,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 0,
-                      "parallelIndex": 0,
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 255,
+                      "duration": 644,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-09-15T17:59:24.876Z",
+                      "startTime": "2026-09-15T22:10:24.848Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1758,15 +1974,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 0,
-                      "parallelIndex": 0,
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 858,
+                      "duration": 1271,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-09-15T17:59:25.137Z",
+                      "startTime": "2026-09-15T22:10:25.501Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1792,15 +2008,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 0,
-                      "parallelIndex": 0,
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 2159,
+                      "duration": 2507,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-09-15T17:59:26.000Z",
+                      "startTime": "2026-09-15T22:10:26.783Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1826,15 +2042,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 0,
-                      "parallelIndex": 0,
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 4351,
+                      "duration": 780,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-09-15T17:59:28.165Z",
+                      "startTime": "2026-09-15T22:10:29.302Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1877,15 +2093,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 1,
-                      "parallelIndex": 1,
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 268,
+                      "duration": 660,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-09-15T17:59:26.991Z",
+                      "startTime": "2026-09-15T22:10:26.354Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1911,15 +2127,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 1,
-                      "parallelIndex": 1,
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 3821,
+                      "duration": 4313,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-09-15T17:59:27.265Z",
+                      "startTime": "2026-09-15T22:10:27.025Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1945,15 +2161,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 1,
-                      "parallelIndex": 1,
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 3538,
+                      "duration": 3941,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-09-15T17:59:31.093Z",
+                      "startTime": "2026-09-15T22:10:31.350Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1996,15 +2212,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 0,
-                      "parallelIndex": 0,
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 2977,
+                      "duration": 3676,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-09-15T17:59:32.525Z",
+                      "startTime": "2026-09-15T22:10:30.100Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2030,15 +2246,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 0,
-                      "parallelIndex": 0,
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 2476,
+                      "duration": 2920,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-09-15T17:59:35.508Z",
+                      "startTime": "2026-09-15T22:10:33.786Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2064,15 +2280,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 0,
-                      "parallelIndex": 0,
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 2488,
+                      "duration": 2906,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-09-15T17:59:37.991Z",
+                      "startTime": "2026-09-15T22:10:36.719Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2098,15 +2314,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 0,
-                      "parallelIndex": 0,
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 2524,
+                      "duration": 3062,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-09-15T17:59:40.487Z",
+                      "startTime": "2026-09-15T22:10:39.642Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2132,15 +2348,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 0,
-                      "parallelIndex": 0,
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 2476,
+                      "duration": 2901,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-09-15T17:59:43.020Z",
+                      "startTime": "2026-09-15T22:10:42.721Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2166,15 +2382,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 0,
-                      "parallelIndex": 0,
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 2480,
+                      "duration": 2909,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-09-15T17:59:45.502Z",
+                      "startTime": "2026-09-15T22:10:45.632Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2200,15 +2416,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 0,
-                      "parallelIndex": 0,
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 2427,
+                      "duration": 2830,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-09-15T17:59:47.988Z",
+                      "startTime": "2026-09-15T22:10:48.551Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2234,15 +2450,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 0,
-                      "parallelIndex": 0,
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 2445,
+                      "duration": 2864,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-09-15T17:59:50.422Z",
+                      "startTime": "2026-09-15T22:10:51.393Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2276,15 +2492,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 0,
-                      "parallelIndex": 0,
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 5410,
+                      "duration": 6497,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-09-15T17:59:52.876Z",
+                      "startTime": "2026-09-15T22:10:54.276Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2310,15 +2526,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 0,
-                      "parallelIndex": 0,
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 3772,
+                      "duration": 4308,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-09-15T17:59:58.295Z",
+                      "startTime": "2026-09-15T22:11:00.784Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2344,15 +2560,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 0,
-                      "parallelIndex": 0,
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 3867,
+                      "duration": 4378,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-09-15T18:00:02.072Z",
+                      "startTime": "2026-09-15T22:11:05.102Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2378,15 +2594,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 0,
-                      "parallelIndex": 0,
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 4008,
+                      "duration": 4638,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-09-15T18:00:05.945Z",
+                      "startTime": "2026-09-15T22:11:09.489Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2412,15 +2628,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 0,
-                      "parallelIndex": 0,
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 3807,
+                      "duration": 4324,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-09-15T18:00:09.959Z",
+                      "startTime": "2026-09-15T22:11:14.141Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2446,15 +2662,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 0,
-                      "parallelIndex": 0,
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 3859,
+                      "duration": 4362,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-09-15T18:00:13.772Z",
+                      "startTime": "2026-09-15T22:11:18.474Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2480,15 +2696,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 0,
-                      "parallelIndex": 0,
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 3694,
+                      "duration": 4126,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-09-15T18:00:17.637Z",
+                      "startTime": "2026-09-15T22:11:22.845Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2514,15 +2730,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 0,
-                      "parallelIndex": 0,
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 3129,
+                      "duration": 3541,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-09-15T18:00:21.340Z",
+                      "startTime": "2026-09-15T22:11:26.981Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2542,9 +2758,9 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-09-15T17:59:16.737Z",
-    "duration": 67781.777,
-    "expected": 66,
+    "startTime": "2026-09-15T22:10:08.167Z",
+    "duration": 82405.55,
+    "expected": 70,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0
