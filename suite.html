@@ -2,6 +2,11 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <!-- GitHub Pages ignores the _headers file, so CSP/referrer are enforced via
+       meta tags (defense-in-depth). frame-ancestors / X-Frame-Options and
+       nosniff cannot be set via meta — see _headers for hosts that honor it. -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self'; base-uri 'self'; form-action 'self'" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Suite detail — Quality Lab</title>
   <meta name="description" content="Per-suite test results and security findings from the DevSecOps pipeline." />
